@@ -161,30 +161,22 @@
   }
 }
 
-.bg-gradient-background {
-  background: linear-gradient(90deg, var(--background) 0%, var(--backgroundGrad) 100%);
-  background-size: 200% 200%;
-  animation: gradientShift 8s ease infinite;
-}
-
-@layer utilities {
-  .main-button:hover {
-    box-shadow: 0 0 10px var(--primary);
-  }
-}
-
 @layer utilities {
   .hero-background {
     @apply absolute inset-0 bg-cover bg-center transition-all duration-500;
     background-image: url('/background/hero-light.jpg');
-    background-attachment: fixed;
   }
 
   .dark .hero-background {
     background-image: url('/background/hero-dark.jpg');
   }
-}
 
+  @media (hover: hover) and (pointer: fine) {
+    .hero-background {
+      background-attachment: fixed;
+    }
+  }
+}
 
 #root {
   max-width: 100%;

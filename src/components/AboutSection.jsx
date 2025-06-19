@@ -13,13 +13,14 @@ export default function AboutSection() {
                     <h3 className="text-2xl md:text-4xl lg:text-3xl font-semibold mb-4">
                         Software Engineer & Full-Stack Developer
                     </h3>
+                    <hr className="border-primary mb-4" />
                     <p className="text-muted-foreground text-md md:text-lg lg:text-lg mb-4 max-w-3xl mx-auto">
                         I'm a recent Software Engineering graduate from Jordan University of Science and Technology, with hands-on experience building full-stack applications using the MERN stack. I've a passion for writing clean, efficient, and scalable code.
                     </p>
-                    <p className="text-muted-foreground text-lg mb-6 max-w-3xl mx-auto">
+                    <p className="text-muted-foreground text-md md:text-lg lg:text-lg mb-4 max-w-3xl mx-auto">
                         With over 5 years in customer-facing roles, I'm confident in communicating clearly, offering tech support, and explaining ideas in simple terms. I enjoy building things that people find useful.
                     </p>
-
+                    <hr className="border-primary mb-4" />
                     {/* Quick Stats */}
                     <div className="flex flex-wrap justify-center gap-6 mb-8">
                         <div className="flex items-center gap-2 text-sm">
