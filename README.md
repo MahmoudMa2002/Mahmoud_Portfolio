@@ -1,6 +1,7 @@
 # Mahmoud's Portfolio
 
-**Live Demo**: [Visit the portfolio on Vercek](https://mahmoud-portfolio-henna.vercel.app/)
+**Live Demo**: [Visit the portfolio on Vercel](https://mahmoud-portfolio-henna.vercel.app/)
+
 ![Portfolio UI Preview](https://res.cloudinary.com/dqcv0p9p6/image/upload/v1750347434/Screenshot_4_kwyvnj.png)
 
 
