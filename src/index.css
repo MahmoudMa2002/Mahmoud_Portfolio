@@ -1,5 +1,74 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-border: var(--border);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-card: var(--card);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
+  --animate-fade-in: fade-in 0.7s ease-out forwards;
+  --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forwards;
+  --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forwards;
+  --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.6s forwards;
+  --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forwards;
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes pulse-subtle {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
 @layer base {
   :root {
     --background: #e1e4e9;
@@ -9,14 +78,6 @@
     --primary: #194da0;
     --primary-foreground: #ffffff;
     --border: #ffffff;
-
-    --animate-float: float 6s ease-in-out infinite;
-    --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
-    --animate-fade-in: fade-in 0.7s ease-out forwards;
-    --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forwards;
-    --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forwards;
-    --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.6s forwards;
-    --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forwards;
   }
 
   .dark {
@@ -29,6 +90,7 @@
     --border: #334155;
   }
 
+
   * {
     @apply border-border;
   }
@@ -40,131 +102,114 @@
   body {
     @apply bg-background text-foreground transition-colors duration-300;
     font-feature-settings: 'rlig' 1, 'calt' 1;
-    font-family: sans-serif;
-  }
-
-  #root {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
+    font-family: sans-serif
   }
 }
 
-@layer utilities {
-  .container {
-    margin-inline: auto;
-    padding-inline: 1rem;
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
 
-    @media (min-width: 640px) {
-      max-width: 640px;
-    }
-    @media (min-width: 768px) {
-      max-width: 768px;
-    }
-    @media (min-width: 1024px) {
-      max-width: 1024px;
-    }
-    @media (min-width: 1280px) {
-      max-width: 1280px;
-    }
-    @media (min-width: 1400px) {
-      max-width: 1400px;
-    }
+  @media (min-width: 640px) {
+    max-width: 640px;
   }
 
-  .text-glow {
-    @apply relative;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  @media (min-width: 768px) {
+    max-width: 768px;
   }
 
-  .card-hover {
-    @apply transition-transform duration-300 hover:scale-105 hover:shadow-lg;
+  @media (min-width: 1024px) {
+    max-width: 1024px;
   }
 
-  .gradient-border {
-    @apply relative rounded-md;
-    background: linear-gradient(to right, var(--card), var(--card));
-    background-clip: padding-box;
-    border: 1px solid transparent;
+  @media (min-width: 1280px) {
+    max-width: 1280px;
   }
 
-  .main-button {
-    @apply px-6 py-2 rounded-md bg-primary text-primary-foreground font-medium transition-all duration-300 hover:scale-[1.05] active:scale-95;
-    box-shadow: none;
-  }
-
-  .main-button:hover {
-    box-shadow: 0 0 10px var(--primary);
-  }
-
-  .hero-background {
-    @apply absolute inset-0 bg-cover bg-center transition-all duration-500;
-    background-image: url('/background/hero-light.jpg');
-  }
-
-  .dark .hero-background {
-    background-image: url('/background/hero-dark.jpg');
-  }
-
-  .bg-gradient-background {
-    background: linear-gradient(90deg, var(--background) 0%, var(--backgroundGrad) 100%);
-    background-size: 200% 200%;
-    animation: gradientShift 8s ease infinite;
-  }
-
-  .animate-blink {
-    animation: blink 1s step-start infinite;
+  @media (min-width: 1400px) {
+    max-width: 1400px;
   }
 }
 
-/* Animations */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+@utility text-glow {
+  @apply relative;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
-@keyframes pulse-subtle {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.8;
-  }
+@utility card-hover {
+  @apply transition-transform duration-300 hover:scale-105 hover:shadow-lg;
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@utility gradient-border {
+  @apply relative rounded-md;
+  background: linear-gradient(to right, var(--card), var(--card));
+  background-clip: padding-box;
+  border: 1px solid transparent;
+}
+
+@utility main-button {
+  @apply px-6 py-2 rounded-md bg-primary text-primary-foreground font-medium transition-all duration-300 hover:scale-[1.05] active:scale-95;
+  box-shadow: none;
 }
 
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
 
+.bg-gradient-background {
+  background: linear-gradient(90deg, var(--background) 0%, var(--backgroundGrad) 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@layer utilities {
+  .main-button:hover {
+    box-shadow: 0 0 10px var(--primary);
+  }
+}
+
+@layer utilities {
+  .hero-background {
+    @apply absolute inset-0 bg-cover bg-center transition-all duration-500;
+    background-image: url('/background/hero-light.jpg');
+    background-attachment: fixed;
+  }
+
+  .dark .hero-background {
+    background-image: url('/background/hero-dark.jpg');
+  }
+}
+
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
 @keyframes blink {
-  0%, 100% {
-    opacity: 1;
+
+  0%,
+  100% {
+    opacity: 1
   }
+
   50% {
-    opacity: 0;
+    opacity: 0
   }
+}
+
+.animate-blink {
+  animation: blink 1s step-start infinite;
 }
