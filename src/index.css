@@ -90,11 +90,6 @@
     --border: #334155;
   }
 
-
-  * {
-    @apply border-border;
-  }
-
   html {
     @apply scroll-smooth;
   }
