@@ -44,10 +44,10 @@ export default function SkillsSection() {
         <section id="skills" className="py-8 px-4 relative bg-secondary/30 scroll-mt-12">
             <div className="container mx-auto max-w-6xl">
                 {/*Title*/}
-                <h2 className="text-3xl md:text-4xl font-bold mb-5 text-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-3 text-center">
                     My <span className="text-primary">Skills</span>
                 </h2>
-
+                <div class="w-24 h-1 mb-6 bg-gradient-to-r from-primary to-border mx-auto rounded-full"></div>
                 {/*Filter */}
                 <div className='flex flex-wrap justify-center all gap-4 mb-8'>
                     {categories.map((category, key) => (

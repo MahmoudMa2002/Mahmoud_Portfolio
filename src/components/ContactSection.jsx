@@ -4,10 +4,11 @@ export default function ContactSection() {
     return (
         <section id="contact" className=" px-4 relative">
             <div className="container mx-auto max-w-6xl">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-3 text-center">
                     Get In <span className="text-primary">Touch</span>
                 </h2>
-                <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+                <div class="w-24 h-1 mb-4 bg-gradient-to-r from-primary to-border mx-auto rounded-full"></div>
+                <p className="text-center text-muted-foreground mb-4 max-w-2xl mx-auto">
                     Send me a message via email, call my phone number, or connect with me on LinkedIn.
                 </p>
 
