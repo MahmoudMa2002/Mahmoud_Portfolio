@@ -1,12 +1,54 @@
-# React + Vite
+# Mahmoud's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo**: [Visit the portfolio on Vercel](https://mahmoud-portfolio-henna.vercel.app/)
 
-Currently, two official plugins are available:
+![Portfolio UI Preview](https://res.cloudinary.com/dqcv0p9p6/image/upload/v1750347434/Screenshot_4_kwyvnj.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## About
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A modern, responsive portfolio website built with React and Vite, showcasing my projects, skills, and professional experience. This portfolio website serves as a showcase of my work as a developer. It features a modern design with smooth animations and responsive layouts that work across all devices.
+
+
+## Technologies Used
+
+- **Frontend Framework**: React
+- **Build Tool**: Vite
+- **Languages**: JavaScript, HTML5, CSS3
+- **Styling**: CSS Modules / Styled Components / Tailwind CSS (update as needed)
+- **Icons**: svgrepo Icons / Lucide React
+- **Animations**: CSS Animations
+
+## Project Structure
+
+```
+Mahmoud_Portfolio/
+├── public/
+│   ├── images/
+│   ├── favicon.ico
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Header/
+│   │   ├── Hero/
+│   │   ├── About/
+│   │   ├── Projects/
+│   │   ├── Skills/
+│   │   ├── Contact/
+│   │   └── Footer/
+│   ├── assets/
+│   │   ├── images/
+│   │   └── styles/
+│   ├── utils/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── package.json
+├── vite.config.js
+├── .eslintrc.cjs
+└── README.md
+```
+
+## Acknowledgments
+
+- [PedroTech](https://github.com/machadop1407/beautiful-react-tailwind-portfolio) for the original design inspiration
