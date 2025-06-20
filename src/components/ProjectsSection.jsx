@@ -12,7 +12,7 @@ const project = [
     {
         id: 2,
         title: '50 Projects in 50 Days',
-        description: 'Built 50 mini projects using HTML, CSS, and JavaScript with improved structure and style for each project. Improvments and demos are listed on Github',
+        description: 'Built 50 mini frontend projects as part of Brad Traversy’s 50 Projects in 50 Days course. Each project was enhanced with improved structure and styling. Live demos and improvements are available on GitHub.',
         image: '/projects/project2.png',
         tags: ['CSS', 'JavaScript', 'HTML'],
         demoUrl: 'https://codepen.io/collection/YwEpgk?grid_type=GRID',
@@ -21,7 +21,7 @@ const project = [
     {
         id: 3,
         title: 'MapRoam',
-        description: 'A full-stack location discovery app, built independently while following Colt Steele’s The Web Developer Bootcamp. Full list of features on Github.',
+        description: 'A full-stack web application for discovering and sharing locations, built independently while following Colt Steele’s The Web Developer Bootcamp. Users can view, add, edit, and review locations. Built using Node.js, Express, MongoDB, and EJS. Full list of features and code available on GitHub.',
         image: '/projects/project1.png',
         tags: ['Node.js','Express.js', 'Mapbox', 'Passport.js', 'MongoDB'],
         demoUrl: 'https://jomap.onrender.com/',
