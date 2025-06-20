@@ -72,7 +72,6 @@
 @layer base {
   :root {
     --background: #e1e4e9;
-    --backgroundGrad: #e6e6e6;
     --foreground: #2a2f38;
     --card: #f1f5f9;
     --primary: #194da0;
@@ -82,7 +81,6 @@
 
   .dark {
     --background: #14171c;
-    --backgroundGrad: #17191b;
     --foreground: #f1f5f9;
     --card: #2c323b;
     --primary: #8899AA;

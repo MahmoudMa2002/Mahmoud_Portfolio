@@ -31,12 +31,12 @@ const project = [
 
 export default function ProjectsSection() {
     return (
-        <section id="projects" className="py-24 px-4 relative bg-gradient-to-b from-background to-muted/20">
+        <section id="projects" className="py-24 px-4 relative ">
             <div className="container mx-auto max-w-6xl">
                 {/* Title */}
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                        Featured <span className="text-primary bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">Projects</span>
+                        Featured <span className="text-primary ">Projects</span>
                     </h2>
                     <div className="w-24 h-1 mb-6 bg-gradient-to-r from-primary to-border mx-auto rounded-full"></div>
                     <p className="text-muted-foreground mb-4 max-w-2xl mx-auto text-lg leading-relaxed">
