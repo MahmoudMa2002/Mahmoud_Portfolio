@@ -131,9 +131,6 @@
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
-@utility card-hover {
-  @apply transition-transform duration-300 hover:scale-102 hover:shadow-lg;
-}
 
 @utility gradient-border {
   @apply relative rounded-md;

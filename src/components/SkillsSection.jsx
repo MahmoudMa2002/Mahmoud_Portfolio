@@ -55,7 +55,7 @@ export default function SkillsSection() {
                             key={key}
                             onClick={() => setActiveCategory(category)}
                             className={cn(
-                                "cursor-pointer px-5 py-2 rounded-full transition-all duration-300",
+                                "cursor-pointer px-5 py-2 rounded-full transition-all duration-400",
                                 activeCategory === category ? 'bg-primary text-primary-foreground' : "border border-primary text-primary hover:scale-[1.05] hover:bg-primary/10")}
                         >
                             {category}
@@ -69,14 +69,14 @@ export default function SkillsSection() {
                         return (
                             <div
                                 key={index}
-                                className="bg-card p-6 rounded-xl shadow-xs card-hover flex flex-col items-center justify-center group transition-all duration-300 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2"
+                                className="bg-card p-6 rounded-xl shadow-xs card-hover flex flex-col items-center justify-center group transition-all duration-400 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2"
                             >
                                 <img
                                     src={skill.icon}
                                     alt={skill.name}
-                                    className="w-12 h-12 mb-3 group-hover:scale-110 transition-transform duration-300"
+                                    className="w-12 h-12 mb-3 group-hover:scale-110 transition-all duration-400"
                                 />
-                                <h3 className="font-semibold text-sm text-center text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                                <h3 className="font-semibold text-sm text-center">
                                     {skill.name}
                                 </h3>
                             </div>
