@@ -4,7 +4,7 @@ const project = [
     {
         id: 1,
         title: 'Bus Reservation System',
-        description: 'Early project, served as a learning foundation for building dynamic websites and applying MVC architecture principles.',
+        description: 'Early graduation project, served as a learning foundation for building dynamic websites and applying MVC architecture principles.',
         image: '/projects/project3.png',
         tags: ['JSP', 'MySQL', 'HTML', 'CSS'],
         githubUrl: 'https://github.com/laithshabbar/proj2/tree/main/proj2'
@@ -12,7 +12,7 @@ const project = [
     {
         id: 2,
         title: '50 Projects in 50 Days',
-        description: 'Built 50 mini projects using HTML, CSS, and JavaScript with improved structure and style for each project.',
+        description: 'Built 50 mini frontend projects as part of Brad Traversy’s 50 Projects in 50 Days course. Each project was enhanced with improved structure and styling. Live demos and improvements are available on GitHub.',
         image: '/projects/project2.png',
         tags: ['CSS', 'JavaScript', 'HTML'],
         demoUrl: 'https://github.com/MahmoudMa2002/50projects50days?tab=readme-ov-file#project-list',
@@ -21,9 +21,9 @@ const project = [
     {
         id: 3,
         title: 'MapRoam',
-        description: 'A full-stack location discovery app built using the MERN stack. Full list of features on Github.',
+        description: 'A full-stack web application for discovering and sharing locations, built independently while following Colt Steele’s The Web Developer Bootcamp. Full list of features and code available on GitHub.',
         image: '/projects/project1.png',
-        tags: ['MERN Stack', 'Mapbox', 'Passport.js', 'Render'],
+        tags: ['Node.js','Express.js', 'Mapbox', 'Passport.js', 'MongoDB'],
         demoUrl: 'https://jomap.onrender.com/',
         githubUrl: 'https://github.com/MahmoudMa2002/MapRoam'
     }
