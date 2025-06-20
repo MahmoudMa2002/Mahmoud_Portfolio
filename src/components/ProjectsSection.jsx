@@ -4,7 +4,7 @@ const project = [
     {
         id: 1,
         title: 'Bus Reservation System',
-        description: 'Early project, served as a learning foundation for building dynamic websites and applying MVC architecture principles.',
+        description: 'Early graduation project, served as a learning foundation for building dynamic websites and applying MVC architecture principles.',
         image: '/projects/project3.png',
         tags: ['JSP', 'MySQL', 'HTML', 'CSS'],
         githubUrl: 'https://github.com/laithshabbar/proj2/tree/main/proj2'
@@ -21,7 +21,7 @@ const project = [
     {
         id: 3,
         title: 'MapRoam',
-        description: 'A full-stack web application for discovering and sharing locations, built independently while following Colt Steele’s The Web Developer Bootcamp. Users can view, add, edit, and review locations. Built using Node.js, Express, MongoDB, and EJS. Full list of features and code available on GitHub.',
+        description: 'A full-stack web application for discovering and sharing locations, built independently while following Colt Steele’s The Web Developer Bootcamp. Full list of features and code available on GitHub.',
         image: '/projects/project1.png',
         tags: ['Node.js','Express.js', 'Mapbox', 'Passport.js', 'MongoDB'],
         demoUrl: 'https://jomap.onrender.com/',
