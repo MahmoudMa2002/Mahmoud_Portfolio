@@ -15,7 +15,7 @@ const project = [
         description: 'Built 50 mini projects using HTML, CSS, and JavaScript with improved structure and style for each project.',
         image: '/projects/project2.png',
         tags: ['CSS', 'JavaScript', 'HTML'],
-        demoUrl: 'https://codepen.io/collection/YwEpgk?grid_type=GRID',
+        demoUrl: 'https://github.com/MahmoudMa2002/50projects50days?tab=readme-ov-file#project-list',
         githubUrl: 'https://github.com/MahmoudMa2002/50projects50days'
     },
     {

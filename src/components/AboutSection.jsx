@@ -9,7 +9,7 @@ export default function AboutSection() {
                 </h2>
                 <div class="w-24 h-1 mb-12 bg-gradient-to-r from-primary to-border mx-auto rounded-full "></div>
                 {/* Main Intro */}
-                <div className="gradient-border p-8 mb-8 text-center">
+                <div className="gradient-border p-8 mb-8 text-center border border-border/50  hover:border-primary/30 transform hover:-translate-y-2  transition-all duration-300 ">
                     <h3 className="text-2xl md:text-4xl lg:text-3xl font-semibold mb-4">
                         Software Engineer & Full-Stack Developer
                     </h3>
@@ -22,7 +22,7 @@ export default function AboutSection() {
                     </p>
                     <div className="w-full h-px mb-4 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
                     {/* Quick Stats */}
-                    <div className="flex flex-wrap justify-center gap-6 mb-8">
+                    <div className="flex flex-wrap justify-center gap-6 mb-8 ">
                         <div className="flex items-center gap-2 text-sm">
                             <GraduationCap className="h-4 w-4 text-primary" />
                             <span>GPA: 3.33</span>
@@ -56,9 +56,9 @@ export default function AboutSection() {
                 </div>
 
                 {/* Skills & Experience Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
                     {/* Technical Expertise */}
-                    <div className="gradient-border p-6 card-hover">
+                    <div className="gradient-border p-6 card-hover border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
                                 <Code className="h-6 w-6 text-primary" />
@@ -73,7 +73,7 @@ export default function AboutSection() {
                     </div>
 
                     {/* Project Experience */}
-                    <div className="gradient-border p-6 card-hover">
+                    <div className="gradient-border p-6 card-hover border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
                                 <MapPin className="h-6 w-6 text-primary" />
@@ -88,7 +88,7 @@ export default function AboutSection() {
                     </div>
 
                     {/* Professional Experience */}
-                    <div className="gradient-border p-6 card-hover">
+                    <div className="gradient-border p-6 card-hover border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
                                 <Briefcase className="h-6 w-6 text-primary" />
@@ -103,7 +103,7 @@ export default function AboutSection() {
                     </div>
 
                     {/* Learning & Growth */}
-                    <div className="gradient-border p-6 card-hover">
+                    <div className="gradient-border p-6 card-hover border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
                                 <User className="h-6 w-6 text-primary" />
