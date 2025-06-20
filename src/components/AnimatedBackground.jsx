@@ -16,7 +16,7 @@ const AnimatedBackground = () => {
                         key={i}
                         className="absolute w-1 h-1 rounded-full opacity-20 animate-pulse"
                         style={{
-                            backgroundColor: 'var(--primary)',
+                            backgroundColor: 'white',
                             left: `${Math.random() * 100}%`,
                             top: `${Math.random() * 100}%`,
                             animationDelay: `${Math.random() * 3}s`,
