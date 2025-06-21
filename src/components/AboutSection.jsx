@@ -33,7 +33,7 @@ export default function AboutSection() {
                         </div>
                         <div className="flex items-center gap-2 text-sm">
                             <Briefcase className="h-4 w-4 text-primary" />
-                            <span>5+ Years of Experience in Customer-Facing Roles</span>
+                            <span>5+ Years in Customer-Facing Roles</span>
                         </div>
                         <div className="flex items-center gap-2 text-sm">
                             <Globe className="h-4 w-4 text-primary" />
