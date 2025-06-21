@@ -80,13 +80,13 @@
 }
 
   .dark {
-      --background: #020511 ;
-      --foreground: #f1f5f9;
-      --card: #070d1e ;
-      --primary: #90a0b6;
-      --primary-foreground: #f1f5f9;
-      --border: #334155;
-  }
+      --background: #021018;            
+      --foreground: #f1f5f9;            
+      --card: #0a1626;                  
+      --primary: #5c8ca8;               
+      --primary-foreground: #f1f5f9;   
+      --border: #3a4e5a;               
+}
 
   html {
     @apply scroll-smooth;
