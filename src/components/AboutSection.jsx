@@ -15,7 +15,7 @@ export default function AboutSection() {
                     </h3>
                     <div className="w-full h-px mb-4 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
                     <p className="text-muted-foreground text-md md:text-lg lg:text-lg mb-4 max-w-3xl mx-auto">
-                        I’m a recent Software Engineering graduate from Jordan University of Science and Technology with strong experience in full-stack web development, user interface design, and problem-solving. I’ve built scalable, user-focused applications using the MERN stack, and completed hands-on training through many projects and courses.
+                        I’m a recent Software Engineering graduate from Jordan University of Science and Technology with strong experience in full-stack web development, user interface design, and problem-solving. I’ve built user-focused applications using the MERN stack, and completed hands-on training through many projects and courses.
                     </p>
                     <p className="text-muted-foreground text-md md:text-lg lg:text-lg mb-4 max-w-3xl mx-auto">
                         I've over 5 years of customer-facing experience, bringing excellent communication, tech support, and multitasking skills to every team I join. Fluent in Arabic and English and passionate about clean code, thoughtful UX, and continuous learning. 
@@ -33,7 +33,7 @@ export default function AboutSection() {
                         </div>
                         <div className="flex items-center gap-2 text-sm">
                             <Briefcase className="h-4 w-4 text-primary" />
-                            <span>5+ Years Experience</span>
+                            <span>5+ Years of Experience in Customer-Facing Roles</span>
                         </div>
                         <div className="flex items-center gap-2 text-sm">
                             <Globe className="h-4 w-4 text-primary" />
@@ -66,7 +66,7 @@ export default function AboutSection() {
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg mb-2">Technical Expertise</h4>
                                 <p className="text-muted-foreground mb-3">
-                                    Proficient in the MERN stack with experience in building responsive frontend pages and efficient backend systems.
+                                    Experienced with the MERN stack, building responsive frontend interfaces and functional backend systems.
                                 </p>
                             </div>
                         </div>
