@@ -7,7 +7,7 @@ export default function AboutSection() {
                 <h2 className="text-3xl md:text-5xl font-bold mb-3  text-center">
                     About <span className="text-primary">Me</span>
                 </h2>
-                <div class="w-24 h-1 mb-12 bg-gradient-to-r from-primary to-border mx-auto rounded-full "></div>
+                <div className="w-24 h-1 mb-12 bg-gradient-to-r from-primary to-border mx-auto rounded-full "></div>
                 {/* Main Intro */}
                 <div className="gradient-border p-8 mb-8 text-center border border-border/50  hover:border-primary/30 transform hover:-translate-y-2  transition-all duration-400 ">
                     <h3 className="text-2xl md:text-4xl lg:text-3xl font-semibold mb-4">
