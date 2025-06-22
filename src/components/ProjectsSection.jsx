@@ -12,7 +12,7 @@ const project = [
     {
         id: 2,
         title: '50 Projects in 50 Days',
-        description: 'Built 50 mini frontend projects as part of Brad Traversy’s 50 Projects in 50 Days course. Each project was enhanced with improved structure, added features and improved styling. Live demos and improvements are available on GitHub.',
+        description: 'Built 50 mini frontend projects as part of Brad Traversy’s 50 Projects in 50 Days course. Each project was enhanced with improved structure, added features and custom styling. Live demos and improvements are available on GitHub.',
         image: '/projects/project2.png',
         tags: ['CSS', 'JavaScript', 'HTML'],
         demoUrl: 'https://github.com/MahmoudMa2002/50projects50days?tab=readme-ov-file#project-list',
