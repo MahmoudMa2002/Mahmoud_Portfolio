@@ -14,7 +14,7 @@ const AnimatedBackground = () => {
                 {[...Array(60)].map((_, i) => (
                     <div
                         key={i}
-                        className="absolute w-0.6 h-0.6 rounded-full opacity-20 animate-pulse"
+                        className="absolute w-0.5 h-0.5 rounded-full opacity-20 animate-pulse"
                         style={{
                             backgroundColor: 'white',
                             left: `${Math.random() * 100}%`,
