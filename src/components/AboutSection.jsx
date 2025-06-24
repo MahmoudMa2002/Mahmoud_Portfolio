@@ -65,7 +65,7 @@ export default function AboutSection() {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-base md:text-lg mb-2">Technical Expertise</h4>
-                                <p className="text-muted-foreground mb-3">
+                                <p className="text-muted-foreground text-sm md:text-base mb-3 leading-relaxed">
                                     Experienced in React, Node.js, and MongoDB, with a continuous interest in learning new technologies and best practices in web development.
                                 </p>
                             </div>
@@ -80,7 +80,7 @@ export default function AboutSection() {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-base md:text-lg mb-2">Notable Projects</h4>
-                                <p className="text-muted-foreground mb-3">
+                                <p className="text-muted-foreground text-sm md:text-base mb-3 leading-relaxed">
                                     Built 50+ frontend projects and full-stack applications using modern technologies such as React and Tailwind CSS.
                                 </p>
                             </div>
@@ -95,7 +95,7 @@ export default function AboutSection() {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-base md:text-lg mb-2">Professional Background</h4>
-                                <p className="text-muted-foreground mb-3">
+                                <p className="text-muted-foreground text-sm md:text-base mb-3 leading-relaxed">
                                     Over 5 years of experience in customer-facing roles, improving my problem-solving and teamwork skills.
                                 </p>
                             </div>
@@ -110,7 +110,7 @@ export default function AboutSection() {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-base md:text-lg mb-2">Continuous Learning</h4>
-                                <p className="text-muted-foreground mb-3">
+                                <p className="text-muted-foreground text-sm md:text-base mb-3 leading-relaxed">
                                     Completed Colt Steele's Web Developer Bootcamp and Brad Traversy’s 50 Projects in 50 Days course to sharpen my front-end and full-stack skills.
                                 </p>
                             </div>
