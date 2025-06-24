@@ -14,10 +14,10 @@ export default function AboutSection() {
                         Software Engineer & Full-Stack Developer
                     </h3>
                     <div className="w-full h-px mb-4 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
-                    <p className="text-muted-foreground text-sm md:text-base mb-3 leading-relaxed">
+                    <p className="text-muted-foreground text-md md:text-lg lg:text-lg mb-4 max-w-3xl mx-auto">
                         I'm a recent Software Engineering graduate from JUST university with hands-on experience in full-stack development, UI/UX design, and databases. Built and deployed various web applications using modern frontend and backend technologies. Continuously expanding my skill set through practical projects and online learning.
                     </p>
-                    <p className="text-muted-foreground text-sm md:text-base mb-3 leading-relaxed">
+                    <p className="text-muted-foreground text-md md:text-lg lg:text-lg mb-4 max-w-3xl mx-auto">
                         I've over 5 years of customer-facing experience, bringing excellent communication, tech support, and multitasking skills to every team I join. Fluent in Arabic and English and passionate about clean code, thoughtful UX, and continuous learning. 
                     </p>
                     <div className="w-full h-px mb-4 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
