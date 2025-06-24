@@ -26,7 +26,7 @@ export default function HeroSection() {
           <Typewriter texts={[ "Software Engineer", "Full-stack Web Developer", "Recent JUST Graduate", "Open to Full-time Opportunities"]} />
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#projects" className="main-button">
+            <a href="#projects" className="main-button ">
               View My Work
             </a>
           </div>
