@@ -58,13 +58,13 @@ export default function AboutSection() {
                 {/* Skills & Experience Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
                     {/* Technical Expertise */}
-                    <div className="gradient-border p-6  duration-500 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
+                    <div className="gradient-border p-4 md:p-6 duration-400 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
                                 <Code className="h-6 w-6 text-primary" />
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg mb-2">Technical Expertise</h4>
+                                <h4 className="font-semibold text-base md:text-lg mb-2">Technical Expertise</h4>
                                 <p className="text-muted-foreground mb-3">
                                     Experienced in React, Node.js, and MongoDB, with a continuous interest in learning new technologies and best practices in web development.
                                 </p>
@@ -73,13 +73,13 @@ export default function AboutSection() {
                     </div>
 
                     {/* Project Experience */}
-                    <div className="gradient-border p-6  duration-400 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
+                    <div className="gradient-border p-4 md:p-6 duration-400 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
                                 <MapPin className="h-6 w-6 text-primary" />
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg mb-2">Notable Projects</h4>
+                                <h4 className="font-semibold text-base md:text-lg mb-2">Notable Projects</h4>
                                 <p className="text-muted-foreground mb-3">
                                     Built 50+ frontend projects and full-stack applications using modern technologies such as React and Tailwind CSS.
                                 </p>
@@ -88,13 +88,13 @@ export default function AboutSection() {
                     </div>
 
                     {/* Professional Experience */}
-                    <div className="gradient-border p-6  duration-400 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
+                    <div className="gradient-border p-4 md:p-6 duration-400 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
                                 <Briefcase className="h-6 w-6 text-primary" />
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg mb-2">Professional Background</h4>
+                                <h4 className="font-semibold text-base md:text-lg mb-2">Professional Background</h4>
                                 <p className="text-muted-foreground mb-3">
                                     Over 5 years of experience in customer-facing roles, improving my problem-solving and teamwork skills.
                                 </p>
@@ -103,13 +103,13 @@ export default function AboutSection() {
                     </div>
 
                     {/* Learning & Growth */}
-                    <div className="gradient-border p-6  duration-400 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
+                    <div className="gradient-border p-4 md:p-6 duration-400 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
                                 <User className="h-6 w-6 text-primary" />
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg mb-2">Continuous Learning</h4>
+                                <h4 className="font-semibold text-base md:text-lg mb-2">Continuous Learning</h4>
                                 <p className="text-muted-foreground mb-3">
                                     Completed Colt Steele's Web Developer Bootcamp and Brad Traversy’s 50 Projects in 50 Days course to sharpen my front-end and full-stack skills.
                                 </p>
