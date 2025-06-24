@@ -46,7 +46,7 @@ export default function SkillsSection() {
     });
 
     return (
-        <FadeInOnScroll delay={0.2} direction="up" >
+        <FadeInOnScroll delay={0.1} direction="up" >
             <section id="skills" className="py-8 px-4 relative bg-secondary/30 scroll-mt-12">
                 <div className="container mx-auto max-w-6xl">
                     {/*Title*/}
