@@ -53,7 +53,7 @@ export default function ProjectsSection() {
                         {project.map((project, key) => (
                             <div
                                 key={key}
-                                className={`group bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2 ${key === 2 ? "md:col-span-2 mx-auto max-w-2xl" : ""
+                                className={`group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2 ${key === 2 ? "md:col-span-2 mx-auto max-w-2xl" : ""
                                     }`}
                             >
                                 {/* Project Image */}

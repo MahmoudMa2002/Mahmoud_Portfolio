@@ -18,7 +18,7 @@ export default function ContactSection() {
                 </FadeInOnScroll>
 
                 <FadeInOnScroll delay={0.4} direction="up" >
-                    <div className="bg-card p-8 md:p-12 rounded-xl shadow-lg border border-border/50 backdrop-blur-sm max-w-6xl mx-auto">
+                    <div className="bg-card p-8 md:p-12 rounded-2xl shadow-lg border border-border/50 backdrop-blur-sm max-w-6xl mx-auto">
                         <div className="grid grid-cols-1 md:grid-cols-3">
                             {/* Email */}
                             <div className="flex flex-col items-center text-center space-y-3 group py-6 border-b md:border-b-0 md:border-r border-primary">
