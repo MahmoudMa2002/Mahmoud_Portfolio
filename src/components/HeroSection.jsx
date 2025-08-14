@@ -24,11 +24,11 @@ export default function HeroSection() {
           </h1>
 
           <div className="opacity-0 animate-fade-in-delay-3">
-            <Typewriter texts={["Software Engineer", "Full-stack Web Developer", "Recent JUST Graduate", "Open to Full-time Opportunities"]} />
+            <Typewriter texts={["Software Engineer", "MERN Stack Developer @ AladdinB2B", "Open to Full-time Opportunities"]} />
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in-delay-4 block">
-            <a href="#projects" className="main-button ">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-fade-in-delay-4">
+            <a href="#projects" className="main-button w-40 sm:w-auto">
               View My Work
             </a>
           </div>
