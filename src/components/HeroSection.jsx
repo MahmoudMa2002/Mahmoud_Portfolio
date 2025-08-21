@@ -24,7 +24,7 @@ export default function HeroSection() {
           </h1>
 
           <div className="opacity-0 animate-fade-in-delay-3">
-            <Typewriter texts={["Software Engineer", "MERN Stack Developer @ AladdinB2B", "Open to Full-time Opportunities"]} />
+            <Typewriter texts={["Software Engineer Graduate | JUST University", "Full-Stack Developer | React, Node.js, MongoDB", "MERN Stack Developer @ AladdinB2B" ]} />
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-fade-in-delay-4">
