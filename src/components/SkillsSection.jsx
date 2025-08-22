@@ -6,7 +6,6 @@ const skills = [
     { name: 'Tailwind CSS', category: 'front-end', icon: 'https://www.svgrepo.com/show/374118/tailwind.svg' },
     { name: 'EJS', category: 'front-end', icon: 'https://www.svgrepo.com/show/373574/ejs.svg' },
     { name: 'React', category: 'front-end', icon: 'https://www.svgrepo.com/show/452092/react.svg' },
-    { name: 'Material UI', category: 'front-end', icon: 'https://www.svgrepo.com/show/354048/material-ui.svg' },
 
     { name: 'Node.js', category: 'back-end', icon: 'https://www.svgrepo.com/show/452075/node-js.svg' },
     { name: 'Express.js', category: 'back-end', icon: 'https://images.seeklogo.com/logo-png/33/1/express-js-logo-png_seeklogo-339850.png' },
@@ -23,6 +22,8 @@ const skills = [
     { name: 'VS Code', category: 'tools', icon: 'https://www.svgrepo.com/show/452129/vs-code.svg' },
     { name: 'Postman', category: 'tools', icon: 'https://www.svgrepo.com/show/354202/postman-icon.svg' },
     { name: 'Mapbox', category: 'tools', icon: 'https://www.svgrepo.com/show/354035/mapbox-icon.svg ' },
+    { name: 'Figma', category: 'tools', icon: 'https://www.svgrepo.com/show/448222/figma.svg ' },
+    { name: 'Wix', category: 'tools', icon: 'https://www.svgrepo.com/show/331649/wix.svg' },
 
     { name: 'Python', category: 'languages', icon: 'https://www.svgrepo.com/show/452091/python.svg' },
     { name: 'PHP', category: 'languages', icon: 'https://www.svgrepo.com/show/452088/php.svg' },
