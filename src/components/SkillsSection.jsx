@@ -47,9 +47,9 @@ export default function SkillsSection() {
     });
 
     return (
-        <FadeInOnScroll delay={0.1} direction="up" >
-            <section id="skills" className="py-8 px-4 relative bg-secondary/30 scroll-mt-12">
-                <div className="container mx-auto max-w-6xl">
+        <section id="skills" className="py-8 px-4 relative bg-secondary/30 scroll-mt-12">
+            <div className="container mx-auto max-w-6xl">
+                <FadeInOnScroll delay={0.1} direction="up" >
                     {/*Title*/}
                     <h2 className="text-3xl md:text-4xl font-bold mb-3 text-center">
                         My <span className="text-primary">Skills</span>
@@ -69,30 +69,32 @@ export default function SkillsSection() {
                             </button>
                         ))}
                     </div>
+                </FadeInOnScroll>
 
-                    {/*skills */}
-                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 ">
-                        {filteredSkills.map((skill, index) => {
-                            return (
-                                <div
-                                    key={index}
-                                    className="bg-card p-6 rounded-xl shadow-xs card-hover flex flex-col items-center justify-center group transition-all duration-400 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2"
-                                >
-                                    <img
-                                        src={skill.icon}
-                                        alt={skill.name}
-                                        className="w-12 h-12 mb-3 group-hover:scale-110 transition-all duration-400"
-                                    />
-                                    <h3 className="font-semibold text-sm text-center">
-                                        {skill.name}
-                                    </h3>
-                                </div>
-                            );
+                <FadeInOnScroll delay={0.3} direction="up" >
+                {/*skills */}
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 ">
+                    {filteredSkills.map((skill, index) => {
+                        return (
+                            <div
+                                key={index}
+                                className="bg-card p-6 rounded-xl shadow-xs card-hover flex flex-col items-center justify-center group transition-all duration-400 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2"
+                            >
+                                <img
+                                    src={skill.icon}
+                                    alt={skill.name}
+                                    className="w-12 h-12 mb-3 group-hover:scale-110 transition-all duration-400"
+                                />
+                                <h3 className="font-semibold text-sm text-center">
+                                    {skill.name}
+                                </h3>
+                            </div>
+                        );
 
-                        })}
-                    </div>
+                    })}
                 </div>
-            </section >
-        </FadeInOnScroll>
+                </FadeInOnScroll>
+            </div>
+        </section >
     );
 };
