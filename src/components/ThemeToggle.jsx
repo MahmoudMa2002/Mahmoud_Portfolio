@@ -37,9 +37,9 @@ export default function ThemeToggle() {
 
     >
       {isDarkMode ? (
-        <Sun className="cursor-pointer hover:text-yellow-400 hover:border-yellow-400" />
+        <Sun className="cursor-pointer hover:text-yellow-400 transition-all duration-450" />
       ) : (
-        <Moon className="cursor-pointer hover:text-primary hover:border-gray-400" />
+        <Moon className="cursor-pointer hover:text-primary transition-all duration-450" />
       )}
     </button>
 

@@ -36,7 +36,7 @@ export default function Navbar() {
         )}>
             <div className='container flex items-center justify-between'>
                 {/* logo */}
-                <a className='text-xl font-bold text-primary flex items-center' href='#hero' aria-label='Homepage'>
+                <a className='text-xl text-primary flex items-center' href='#hero' aria-label='Homepage'>
                     <span className='relative z-10'>
                         <span className='text-glow text-foreground'>Mahmoud</span><span>Portfolio</span>
                     </span>
