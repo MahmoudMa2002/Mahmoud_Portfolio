@@ -10,6 +10,7 @@ export default function FadeInOnScroll({
   const [ref, inView] = useInView({
     threshold: 0.2,
     triggerOnce: true,
+    rootMargin: '50px 0px',
   });
 
   const initialY = direction === "up" ? 40 : direction === "down" ? -40 : 0;

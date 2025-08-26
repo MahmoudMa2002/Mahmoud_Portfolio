@@ -70,23 +70,23 @@
 }
 
 @layer base {
-    :root {
-      --background: #ebebeb;          
-      --foreground: #1f2937;          
-      --card: #ffffff;                 
-      --primary: #194da0;              
-      --primary-foreground: #ffffff;   
-      --border: #e2e8f0;        
-}
+  :root {
+    --background: #ebebeb;
+    --foreground: #1f2937;
+    --card: #ffffff;
+    --primary: #194da0;
+    --primary-foreground: #ffffff;
+    --border: #e2e8f0;
+  }
 
   .dark {
-      --background: #021018;            
-      --foreground: #f1f5f9;            
-      --card: #0a1626;                  
-      --primary: #5c8ca8;               
-      --primary-foreground: #f1f5f9;   
-      --border: #3a4e5a;               
-}
+    --background: #021018;
+    --foreground: #f1f5f9;
+    --card: #0a1626;
+    --primary: #5c8ca8;
+    --primary-foreground: #f1f5f9;
+    --border: #3a4e5a;
+  }
 
   html {
     @apply scroll-smooth;
@@ -194,4 +194,10 @@
 
 .animate-blink {
   animation: blink 1s step-start infinite;
+}
+
+.gradient-border,
+.card-hover {
+  will-change: transform;
+  transform: translateZ(0);
 }
