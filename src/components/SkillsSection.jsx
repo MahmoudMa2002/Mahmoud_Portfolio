@@ -1,5 +1,5 @@
 const skills = [
-    { name: 'HTML', category: 'front-tend', icon: 'https://www.svgrepo.com/show/452228/html-5.svg' },
+    { name: 'HTML', category: 'front-end', icon: 'https://www.svgrepo.com/show/452228/html-5.svg' },
     { name: 'CSS', category: 'front-end', icon: 'https://www.svgrepo.com/show/452185/css-3.svg' },
     { name: 'JavaScript', category: 'front-end', icon: 'https://www.svgrepo.com/show/353925/javascript.svg' },
     { name: 'TypeScript', category: 'front-end', icon: 'https://www.svgrepo.com/show/354478/typescript-icon.svg' },
@@ -23,7 +23,7 @@ const skills = [
     { name: 'Vite', category: 'tools', icon: 'https://www.svgrepo.com/show/374167/vite.svg' },
     { name: 'VS Code', category: 'tools', icon: 'https://www.svgrepo.com/show/452129/vs-code.svg' },
     { name: 'Postman', category: 'tools', icon: 'https://www.svgrepo.com/show/354202/postman-icon.svg' },
-    { name: 'Mapbox', category: 'tools', icon: 'https://www.svgrepo.com/show/354035/mapbox-icon.svg ' },
+    { name: 'Mapbox', category: 'tools', icon: 'https://www.svgrepo.com/show/354035/mapbox-icon.svg' },
     { name: 'Figma', category: 'tools', icon: 'https://www.svgrepo.com/show/448222/figma.svg ' },
     { name: 'Wix', category: 'tools', icon: 'https://www.svgrepo.com/show/331649/wix.svg' },
 

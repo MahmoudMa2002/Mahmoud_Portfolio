@@ -16,19 +16,12 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
-        let ticking = false;
         const handleScroll = () => {
-            if (!ticking) {
-                requestAnimationFrame(() => {
-                    setIsScrolled(window.scrollY > 10);
-                    ticking = false;
-                });
-                ticking = true;
-            }
+            setIsScrolled(window.scrollY > 10);
         };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     // Lock scroll when mobile menu is open
