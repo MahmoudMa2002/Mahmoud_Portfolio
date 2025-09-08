@@ -3,7 +3,7 @@ import FadeInOnScroll from "@/components/FadeInOnScroll";
 
 export default function AboutSection() {
     return (
-        <section id="about" className="py-16 px-1 sm:px-4 relative scroll-mt-3">
+        <section id="about" className="py-20 px-1 sm:px-4 relative scroll-mt-3">
             <div className="container mx-auto max-w-6xl">
                 <h2 className="text-3xl md:text-5xl font-bold mb-3  text-center">
                     About <span className="text-primary">Me</span>
