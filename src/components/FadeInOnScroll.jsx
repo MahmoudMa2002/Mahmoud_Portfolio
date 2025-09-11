@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 
 export default function FadeInOnScroll({
   children,
-  direction = "up",
+  direction = "up", // up, down, left, right
   delay = 0.1,
   duration = 0.6,
 }) {
@@ -13,13 +13,18 @@ export default function FadeInOnScroll({
     rootMargin: '50px 0px',
   });
 
-  const initialY = direction === "up" ? 40 : direction === "down" ? -40 : 0;
+  // Determine initial x and y based on direction
+  const initial = {
+    x: direction === "left" ? 40 : direction === "right" ? -40 : 0,
+    y: direction === "up" ? 40 : direction === "down" ? -40 : 0,
+    opacity: 0,
+  };
 
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: initialY }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
+      initial={initial}
+      animate={inView ? { opacity: 1, x: 0, y: 0 } : {}}
       transition={{ duration, delay }}
     >
       {children}

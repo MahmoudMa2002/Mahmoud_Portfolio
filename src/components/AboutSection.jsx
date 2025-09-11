@@ -61,7 +61,7 @@ export default function AboutSection() {
                 {/* Skills & Experience Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
                     {/* Technical Expertise */}
-                    <FadeInOnScroll delay={0.2} direction="up" >
+                    <FadeInOnScroll delay={0.2} direction="right" >
                         <div className="gradient-border p-6 md:p-8 duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                             <div className="flex flex-col md:flex-row items-start gap-4 h-full">
                                 <div className="flex items-center gap-4 md:block">
@@ -81,7 +81,7 @@ export default function AboutSection() {
                     </FadeInOnScroll>
 
                     {/* Project Experience */}
-                    <FadeInOnScroll delay={0.2} direction="up" >
+                    <FadeInOnScroll delay={0.4} direction="left" >
                         <div className="gradient-border p-6 md:p-8 duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                             <div className="flex flex-col md:flex-row items-start gap-4 h-full">
                                 <div className="flex items-center gap-4 md:block">
@@ -101,7 +101,7 @@ export default function AboutSection() {
                     </FadeInOnScroll>
 
                     {/* Professional Experience */}
-                    <FadeInOnScroll delay={0.3} direction="up" >
+                    <FadeInOnScroll delay={0.6} direction="right" >
                         <div className="gradient-border p-6 md:p-8 duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                             <div className="flex flex-col md:flex-row items-start gap-4 h-full">
                                 <div className="flex items-center gap-4 md:block">
@@ -121,7 +121,7 @@ export default function AboutSection() {
                     </FadeInOnScroll>
 
                     {/* Learning & Growth */}
-                    <FadeInOnScroll delay={0.3} direction="up" >
+                    <FadeInOnScroll delay={0.8} direction="left" >
                         <div className="gradient-border p-6 md:p-8 duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                             <div className="flex flex-col md:flex-row items-start gap-4 h-full">
                                 <div className="flex items-center  gap-4 md:block">
