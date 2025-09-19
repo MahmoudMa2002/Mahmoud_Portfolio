@@ -5,10 +5,10 @@ export default function FadeInOnScroll({
   children, 
   direction = "up", 
   delay = 0.1, 
-  duration = 0.5 
+  duration = 0.6 
 }) {
   const [ref, inView] = useInView({
-    threshold: 0.1,
+    threshold: 0.2,
     triggerOnce: true,
   });
 
