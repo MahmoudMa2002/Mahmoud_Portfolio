@@ -19,7 +19,7 @@ export default function HeroSection() {
               Mahmoud
             </span>
             <span className="text-primary ml-2 opacity-0 animate-fade-in-delay-2 block">
-              Mahmoud Abu al-Hayja’a
+              Abu al-Hayja’a
             </span>
           </h1>
 
