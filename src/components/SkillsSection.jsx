@@ -16,16 +16,15 @@ const skills = [
     { name: 'PL/SQL', category: 'databases', icon: 'https://www.svgrepo.com/show/373980/plsql.svg' },
     { name: 'Passport.js', category: 'back-end', icon: 'https://miro.medium.com/v2/resize:fit:300/1*MipdKsttqecPnkKF1DL-qA.png' },
 
-    { name: 'Git & GitHub', category: 'tools', icon: 'https://www.svgrepo.com/show/452210/git.svg' },
-    { name: 'Render', category: 'tools', icon: 'https://pbs.twimg.com/profile_images/1735429515541938176/zOO1N7Su_400x400.jpg' },
-    { name: 'Heroku', category: 'tools', icon: 'https://www.svgrepo.com/show/303683/heroku-logo.svg' },
-    { name: 'Vercel', category: 'tools', icon: 'https://www.svgrepo.com/show/361653/vercel-logo.svg' },
-    { name: 'Vite', category: 'tools', icon: 'https://www.svgrepo.com/show/374167/vite.svg' },
-    { name: 'VS Code', category: 'tools', icon: 'https://www.svgrepo.com/show/452129/vs-code.svg' },
-    { name: 'Postman', category: 'tools', icon: 'https://www.svgrepo.com/show/354202/postman-icon.svg' },
-    { name: 'Mapbox', category: 'tools', icon: 'https://www.svgrepo.com/show/354035/mapbox-icon.svg' },
-    { name: 'Figma', category: 'tools', icon: 'https://www.svgrepo.com/show/448222/figma.svg ' },
-    { name: 'Wix', category: 'tools', icon: 'https://www.svgrepo.com/show/331649/wix.svg' },
+    { name: 'Git & GitHub', category: 'design & tools', icon: 'https://www.svgrepo.com/show/452210/git.svg' },
+    { name: 'Render', category: 'design & tools', icon: 'https://pbs.twimg.com/profile_images/1735429515541938176/zOO1N7Su_400x400.jpg' },
+    { name: 'Heroku', category: 'design & tools', icon: 'https://www.svgrepo.com/show/303683/heroku-logo.svg' },
+    { name: 'Vercel', category: 'design & tools', icon: 'https://www.svgrepo.com/show/361653/vercel-logo.svg' },
+    { name: 'Vite', category: 'design & tools', icon: 'https://www.svgrepo.com/show/374167/vite.svg' },
+    { name: 'VS Code', category: 'design & tools', icon: 'https://www.svgrepo.com/show/452129/vs-code.svg' },
+    { name: 'Postman', category: 'design & tools', icon: 'https://www.svgrepo.com/show/354202/postman-icon.svg' },
+    { name: 'Figma', category: 'design & tools', icon: 'https://www.svgrepo.com/show/448222/figma.svg ' },
+    { name: 'WordPress', category: 'design & tools', icon: 'https://www.svgrepo.com/show/452136/wordpress.svg' },
 
     { name: 'Python', category: 'languages', icon: 'https://www.svgrepo.com/show/452091/python.svg' },
     { name: 'PHP', category: 'languages', icon: 'https://www.svgrepo.com/show/452088/php.svg' },
@@ -39,7 +38,7 @@ import { cn } from '../lib/util';
 import FadeInOnScroll from "@/components/FadeInOnScroll";
 
 
-const categories = ['All', 'Front-end', 'Back-end', 'Tools', 'Languages', 'Databases'];
+const categories = ['All', 'Front-end', 'Back-end', 'Design & Tools', 'Languages', 'Databases'];
 
 export default function SkillsSection() {
     const [activeCategory, setActiveCategory] = useState('All');
@@ -74,27 +73,27 @@ export default function SkillsSection() {
                 </FadeInOnScroll>
 
                 <FadeInOnScroll delay={0.4} direction="up" >
-                {/*skills */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 ">
-                    {filteredSkills.map((skill, index) => {
-                        return (
-                            <div
-                                key={index}
-                                className="bg-card p-6 rounded-xl shadow-xs card-hover flex flex-col items-center justify-center group transition-all duration-400 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2"
-                            >
-                                <img
-                                    src={skill.icon}
-                                    alt={skill.name}
-                                    className="w-12 h-12 mb-3 group-hover:scale-110 transition-all duration-400"
-                                />
-                                <h3 className="font-semibold text-sm text-center">
-                                    {skill.name}
-                                </h3>
-                            </div>
-                        );
+                    {/*skills */}
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 ">
+                        {filteredSkills.map((skill, index) => {
+                            return (
+                                <div
+                                    key={index}
+                                    className="bg-card p-6 rounded-xl shadow-md card-hover flex flex-col items-center justify-center group transition-all duration-400 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2"
+                                >
+                                    <img
+                                        src={skill.icon}
+                                        alt={skill.name}
+                                        className="w-12 h-12 mb-3 group-hover:scale-110 transition-all duration-400"
+                                    />
+                                    <h3 className="font-semibold text-sm text-center">
+                                        {skill.name}
+                                    </h3>
+                                </div>
+                            );
 
-                    })}
-                </div>
+                        })}
+                    </div>
                 </FadeInOnScroll>
             </div>
         </section >

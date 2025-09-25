@@ -36,12 +36,12 @@
     --card: #ffffff;
     --primary: #194da0;
     --primary-foreground: #ffffff;
-    --border: #e2e8f0;
+    --border: #cad1da;
   }
 
   .dark {
     --background: #021018;
-    --foreground: #f1f5f9;
+    --foreground: #ffffff;
     --card: #0a1626;
     --primary: #5c8ca8;
     --primary-foreground: #f1f5f9;

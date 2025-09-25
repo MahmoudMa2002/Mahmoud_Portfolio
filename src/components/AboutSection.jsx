@@ -11,7 +11,7 @@ export default function AboutSection() {
                 <div className="w-24 h-1 mb-12 bg-gradient-to-r from-primary to-border mx-auto rounded-full "></div>
                 {/* Main Intro */}
                 <FadeInOnScroll delay={0.2} direction="up" >
-                    <div className="gradient-border rounded-2xl p-8 mb-8 text-left md:text-center  border border-border/50  hover:border-primary/30 transform hover:-translate-y-2  transition-all duration-400 ">
+                    <div className="gradient-border rounded-2xl shadow-lg p-8 mb-8 text-left md:text-center  border border-border/50  hover:border-primary/30 transform hover:-translate-y-2  transition-all duration-400 ">
                         <h3 className="text-2xl md:text-4xl  text-center lg:text-3xl font-semibold mb-4">
                             Software Engineer | Full-Stack Developer
                         </h3>
@@ -62,7 +62,7 @@ export default function AboutSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
                     {/* Technical Expertise */}
                     <FadeInOnScroll delay={0.2} direction="right" >
-                        <div className="gradient-border p-6 md:p-8 duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
+                        <div className="gradient-border p-6 md:p-8 shadow-lg duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                             <div className="flex flex-col md:flex-row items-start gap-4 h-full">
                                 <div className="flex items-center gap-4 md:block">
                                     <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
@@ -82,7 +82,7 @@ export default function AboutSection() {
 
                     {/* Project Experience */}
                     <FadeInOnScroll delay={0.4} direction="left" >
-                        <div className="gradient-border p-6 md:p-8 duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
+                        <div className="gradient-border p-6 md:p-8 shadow-lg duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                             <div className="flex flex-col md:flex-row items-start gap-4 h-full">
                                 <div className="flex items-center gap-4 md:block">
                                     <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
@@ -102,7 +102,7 @@ export default function AboutSection() {
 
                     {/* Professional Experience */}
                     <FadeInOnScroll delay={0.6} direction="right" >
-                        <div className="gradient-border p-6 md:p-8 duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
+                        <div className="gradient-border p-6 md:p-8 shadow-lg duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                             <div className="flex flex-col md:flex-row items-start gap-4 h-full">
                                 <div className="flex items-center gap-4 md:block">
                                     <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
@@ -122,7 +122,7 @@ export default function AboutSection() {
 
                     {/* Learning & Growth */}
                     <FadeInOnScroll delay={0.8} direction="left" >
-                        <div className="gradient-border p-6 md:p-8 duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
+                        <div className="gradient-border p-6 md:p-8 shadow-lg duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
                             <div className="flex flex-col md:flex-row items-start gap-4 h-full">
                                 <div className="flex items-center  gap-4 md:block">
                                     <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
