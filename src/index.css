@@ -57,6 +57,16 @@
     font-feature-settings: 'rlig' 1, 'calt' 1;
     font-family: sans-serif;
   }
+
+  body::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    background-image: url('/background/hero-light.jpg'), url('/background/hero-dark.jpg');
+  }
 }
 
 @utility container {

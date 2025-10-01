@@ -30,7 +30,7 @@ const skills = [
     { name: 'PHP', category: 'languages', icon: 'https://www.svgrepo.com/show/452088/php.svg' },
     { name: 'Java', category: 'languages', icon: 'https://www.svgrepo.com/show/452234/java.svg' },
     { name: 'C++', category: 'languages', icon: 'https://www.svgrepo.com/show/452183/cpp.svg' },
-    { name: 'C#', category: 'languages', icon: 'https://www.svgrepo.com/show/353622/c-sharp.svg' },
+    { name: 'C#', category: 'languages', icon: 'https://www.svgrepo.com/show/353622/c-sharp.svg' }
 ];
 
 import { useState } from 'react';

@@ -8,8 +8,9 @@ export default function FadeInOnScroll({
   duration = 0.6
 }) {
   const [ref, inView] = useInView({
-    threshold: 0.1,
+    threshold: 0.05,
     triggerOnce: true,
+    rootMargin: '50px',
   });
 
   const variants = {
