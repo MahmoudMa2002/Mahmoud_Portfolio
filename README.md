@@ -49,6 +49,5 @@ Mahmoud_Portfolio/
 └── README.md
 ```
 
-## Acknowledgments
-
-- [PedroTech](https://github.com/machadop1407/beautiful-react-tailwind-portfolio) for the original design inspiration
+## Credits
+   - Icons from [SVG Repo](https://www.svgrepo.com/) and [Lucide React](https://lucide.dev/)
