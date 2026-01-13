@@ -4,11 +4,12 @@ import FadeInOnScroll from "@/components/FadeInOnScroll";
 const project = [
     {
         id: 1,
-        title: 'Bus Reservation System',
-        description: 'Early graduation project, served as a learning foundation for building dynamic websites and applying MVC architecture principles.',
-        image: '/projects/project3.png',
-        tags: ['JSP', 'MySQL', 'HTML', 'CSS'],
-        githubUrl: 'https://github.com/laithshabbar/proj2/tree/main/proj2'
+        title: 'MapRoam',
+        description: 'A full-stack web application for discovering and sharing locations, built independently while following Colt Steele’s The Web Developer Bootcamp. Full list of features and code available on GitHub.',
+        image: '/projects/project1.png',
+        tags: ['Node.js', 'Express.js', 'Mapbox', 'Passport.js', 'MongoDB'],
+        demoUrl: 'https://jomap.onrender.com/',
+        githubUrl: 'https://github.com/MahmoudMa2002/MapRoam'
     },
     {
         id: 2,
@@ -21,12 +22,20 @@ const project = [
     },
     {
         id: 3,
-        title: 'MapRoam',
-        description: 'A full-stack web application for discovering and sharing locations, built independently while following Colt Steele’s The Web Developer Bootcamp. Full list of features and code available on GitHub.',
-        image: '/projects/project1.png',
-        tags: ['Node.js', 'Express.js', 'Mapbox', 'Passport.js', 'MongoDB'],
-        demoUrl: 'https://jomap.onrender.com/',
-        githubUrl: 'https://github.com/MahmoudMa2002/MapRoam'
+        title: 'Bus Reservation System',
+        description: 'Early graduation project, served as a learning foundation for building dynamic websites and applying MVC architecture principles.',
+        image: '/projects/project3.png',
+        tags: ['JSP', 'MySQL', 'HTML', 'CSS'],
+        githubUrl: 'https://github.com/laithshabbar/proj2/tree/main/proj2'
+    },
+    {
+        id: 4,
+        title: 'React Projects',
+        description: 'A collection of React applications built using Vite and both JavaScript and TypeScript. These projects demonstrate component‑based architecture, state management, routing, and reusable UI patterns.',
+        image: '/projects/project4.png',
+        tags: ['React', 'Vite', 'JavaScript', 'TypeScript'],
+        demoUrl: 'https://github.com/MahmoudMa2002/react-projects/tree/main?tab=readme-ov-file#project-list',
+        githubUrl: 'https://github.com/MahmoudMa2002/react-projects/tree/main?tab=readme-ov-file#project-list'
     }
 ]
 
@@ -53,8 +62,7 @@ export default function ProjectsSection() {
                         {project.map((project, key) => (
                             <div
                                 key={key}
-                                className={`group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2 ${key === 2 ? "md:col-span-2 mx-auto max-w-2xl" : ""
-                                    }`}
+                                className={`group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2 }`}
                             >
                                 {/* Project Image */}
                                 <div className="relative overflow-hidden">
