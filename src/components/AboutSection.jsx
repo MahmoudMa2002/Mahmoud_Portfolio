@@ -11,17 +11,18 @@ export default function AboutSection() {
                 <div className="w-24 h-1 mb-12 bg-gradient-to-r from-primary to-border mx-auto rounded-full "></div>
                 {/* Main Intro */}
                 <FadeInOnScroll delay={0.2} direction="up" >
-                    <div className="gradient-border rounded-2xl shadow-lg p-8 mb-8 text-left md:text-center  border border-border/50  hover:border-primary/30 transform hover:-translate-y-2  transition-all duration-400 ">
+                    <div className="gradient-border rounded-2xl shadow-lg p-8 mb-8 text-left md:text-left  border border-border/50  hover:border-primary/30 transform hover:-translate-y-2  transition-all duration-400 ">
                         <h3 className="text-2xl md:text-4xl  text-center lg:text-3xl font-semibold mb-4">
                             Software Engineer | Full-Stack Developer
                         </h3>
                         <div className="w-full h-px mb-6 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+                        <p className="text-md md:text-base lg:text-lg text-center mb-6 max-w-3xl mx-auto px-2">
+                            Hi, I’m Mahmoud. Welcome to my portfolio!                        </p>
                         <p className="text-md md:text-base lg:text-lg mb-6 max-w-3xl mx-auto px-2">
-                            I’m a software engineer working at Aladdinb2b, where I build and maintain web apps using React, Node.js, and MongoDB. Most of my day-to-day is MERN, but I’ve also worked with SQL, PHP, Java, and other tools — I enjoy picking up whatever fits the project needs.
+                            I’m a software engineer at AladdinB2B, where I test, fix, and scale a large codebase using the MERN stack (React, Node.js, and MongoDB). While I spend most of my time in JavaScript, I’ve also worked with SQL, PHP, Java, and more shown in my skills section.
                         </p>
                         <p className="text-md md:text-base lg:text-lg mb-6 max-w-3xl mx-auto px-2">
-                            I graduated from Jordan University of Science and Technology with a GPA of 3.33. Outside of work, I’ve built 50+ frontend and full-stack projects, which really helped me sharpen my skills. Before graduating, I spent over 5 years in customer-facing roles, bringing strong communication and problem-solving skills to the teams I work with.
-                        </p>
+                            I graduated from JUST University with a 3.33 GPA. Since graduating, I’ve built over 50 projects showcased in my projects section and on GitHub. Before graduating, I worked for 5+ years in customer-facing roles, which helps me communicate and solve problems within the teams I work with.                        </p>
                         <div className="w-full h-px mb-4 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
                         {/* Quick Stats */}
                         <div className="flex flex-wrap justify-center gap-3 sm:gap-6 mb-8 px-2">
@@ -35,7 +36,7 @@ export default function AboutSection() {
                             </div>
                             <div className="flex items-center gap-2 text-sm">
                                 <Briefcase className="h-4 w-4 text-primary" />
-                                <span>Full-Time Developer @ Aladdinb2b</span>
+                                <span>Full-Time Developer @ AladdinB2B</span>
                             </div>
                             <div className="flex items-center gap-2 text-sm">
                                 <Globe className="h-4 w-4 text-primary" />
@@ -73,7 +74,7 @@ export default function AboutSection() {
                                 <div className="text-left">
                                     <h4 className="hidden md:block font-semibold text-xl md:text-lg mb-2">Technical Expertise</h4>
                                     <p className="text-muted-foreground text-md md:text-base leading-relaxed">
-                                        Experienced in React, Node.js, and MongoDB, with a continuous interest in learning new technologies in web development.
+                                        Full-stack developer focused on React and Node.js. Very interested in keeping up with the latest tools to build better web apps
                                     </p>
                                 </div>
                             </div>
@@ -93,7 +94,7 @@ export default function AboutSection() {
                                 <div className="text-left">
                                     <h4 className="hidden md:block font-semibold text-xl md:text-lg mb-2">Professional Background</h4>
                                     <p className="text-muted-foreground text-md md:text-base leading-relaxed">
-                                        Built 50+ frontend projects and full-stack applications using modern technologies such as React, Tailwind CSS, Bootstrap and more.
+                                        I've built over 50 projects, ranging from quick frontend components to complete full-stack apps. These projects are where I learned how to turn ideas into code
                                     </p>
                                 </div>
                             </div>
@@ -113,7 +114,7 @@ export default function AboutSection() {
                                 <div className="text-left">
                                     <h4 className="hidden md:block font-semibold text-xl md:text-lg mb-2">Professional Experience</h4>
                                     <p className="text-muted-foreground text-md md:text-base leading-relaxed">
-                                        Currently working as a Junior MERN Stack Developer at AladdinB2B, where I focus on building, testing and improving web applications.
+                                        Currently working as a Junior MERN Stack Developer at AladdinB2B, where I focus on building, testing and improving a large MERN stack codebase.
                                     </p>
                                 </div>
                             </div>

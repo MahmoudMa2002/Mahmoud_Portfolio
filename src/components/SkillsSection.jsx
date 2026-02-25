@@ -8,7 +8,7 @@ const skills = [
     { name: 'React', category: 'front-end', icon: 'https://www.svgrepo.com/show/452092/react.svg' },
 
     { name: 'Node.js', category: 'back-end', icon: 'https://www.svgrepo.com/show/452075/node-js.svg' },
-    { name: 'Nest.js', category: 'back-end', icon: 'https://www.svgrepo.com/show/373872/nestjs.svg' },
+    { name: 'Nest.js', category: 'back-end', icon: 'https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/NestJS-Dark.svg' },
     { name: 'Express.js', category: 'back-end', icon: 'https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/ExpressJS-Dark.svg' },
     { name: 'MongoDB', category: 'databases', icon: 'https://www.svgrepo.com/show/331488/mongodb.svg' },
     { name: 'MySQL', category: 'databases', icon: 'https://www.svgrepo.com/show/303251/mysql-logo.svg' },
@@ -16,7 +16,6 @@ const skills = [
     { name: 'Passport.js', category: 'back-end', icon: 'https://miro.medium.com/v2/resize:fit:300/1*MipdKsttqecPnkKF1DL-qA.png' },
 
     { name: 'Git & GitHub', category: 'design & tools', icon: 'https://www.svgrepo.com/show/452210/git.svg' },
-    { name: 'Render', category: 'design & tools', icon: 'https://pbs.twimg.com/profile_images/1735429515541938176/zOO1N7Su_400x400.jpg' },
     { name: 'Heroku', category: 'design & tools', icon: 'https://www.svgrepo.com/show/303683/heroku-logo.svg' },
     { name: 'Vercel', category: 'design & tools', icon: 'https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/Vercel-Dark.svg' },
     { name: 'Vite', category: 'design & tools', icon: 'https://www.svgrepo.com/show/374167/vite.svg' },
@@ -54,7 +53,6 @@ export default function SkillsSection() {
                     <h2 className="text-3xl md:text-4xl font-bold mb-3 text-center">
                         My <span className="text-primary">Skills</span>
                     </h2>
-                    <div class="w-24 h-1 mb-6 bg-gradient-to-r from-primary to-border mx-auto rounded-full"></div>
                     {/*Filter */}
                     <div className='flex flex-wrap justify-center all gap-4 mb-8'>
                         {categories.map((category, key) => (
