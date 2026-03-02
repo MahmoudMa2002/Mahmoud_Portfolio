@@ -76,7 +76,7 @@ export default function SkillsSection() {
                             return (
                                 <div
                                     key={index}
-                                    className="bg-card p-6 rounded-xl shadow-md card-hover flex flex-col items-center justify-center group transition-all duration-400 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2"
+                                    className="bg-card p-6 rounded-xl shadow-md card-hover flex flex-col items-center justify-center group transition-all duration-300 border border-border/50 hover:border-primary/50 transform hover:-translate-y-2"
                                 >
                                     <img
                                         src={skill.icon}

@@ -5,25 +5,23 @@ export default function AboutSection() {
     return (
         <section id="about" className="py-16 px-1 sm:px-4 relative scroll-mt-3">
             <div className="container mx-auto max-w-6xl">
-                <h2 className="text-3xl md:text-5xl font-bold mb-3  text-center">
+                <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
                     About <span className="text-primary">Me</span>
                 </h2>
-                <div className="w-24 h-1 mb-12 bg-gradient-to-r from-primary to-border mx-auto rounded-full "></div>
+                <div className="w-32 h-1.5 mb-12 bg-gradient-to-r from-primary via-primary/50 to-border mx-auto rounded-full shadow-lg shadow-primary/20"></div>
                 {/* Main Intro */}
                 <FadeInOnScroll delay={0.2} direction="up" >
-                    <div className="gradient-border rounded-2xl shadow-lg p-8 mb-8 text-left md:text-left  border border-border/50  hover:border-primary/30 transform hover:-translate-y-2  transition-all duration-400 ">
-                        <h3 className="text-2xl md:text-4xl  text-center lg:text-3xl font-semibold mb-4">
-                            Software Engineer | Full-Stack Developer
-                        </h3>
-                        <div className="w-full h-px mb-6 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
-                        <p className="text-md md:text-base lg:text-lg text-center mb-6 max-w-3xl mx-auto px-2">
-                            Hi, I’m Mahmoud. Welcome to my portfolio!                        </p>
-                        <p className="text-md md:text-base lg:text-lg mb-6 max-w-3xl mx-auto px-2">
+                    <div className="gradient-border rounded-2xl shadow-xl p-8 md:p-12 mb-12 text-left border border-border/50 hover:border-primary/50 transform hover:-translate-y-2 transition-all duration-300">
+                        <p className="text-lg md:text-xl text-center mb-8 max-w-3xl mx-auto px-2 font-medium">
+                            Hi, I’m Mahmoud. Welcome to my portfolio!
+                        </p>
+                        <div className="w-full h-px mb-8 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+                        <p className="text-base md:text-lg mb-6 max-w-3xl mx-auto px-2 leading-relaxed text-muted-foreground">
                             I’m a software engineer at AladdinB2B, where I test, fix, and scale a large codebase using the MERN stack (React, Node.js, and MongoDB). While I spend most of my time in JavaScript, I’ve also worked with SQL, PHP, Java, and more shown in my skills section.
                         </p>
-                        <p className="text-md md:text-base lg:text-lg mb-6 max-w-3xl mx-auto px-2">
-                            I graduated from JUST University with a 3.33 GPA. Since graduating, I’ve built over 50 projects showcased in my projects section and on GitHub. Before graduating, I worked for 5+ years in customer-facing roles, which helps me communicate and solve problems within the teams I work with.                        </p>
-                        <div className="w-full h-px mb-4 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+                        <p className="text-base md:text-lg mb-8 max-w-3xl mx-auto px-2 leading-relaxed text-muted-foreground">
+                            I graduated from JUST University with a 3.33 GPA. Since graduating, I've built over 50 projects showcased in my projects section and on GitHub. Before graduating, I worked for 5+ years in customer-facing roles, which helps me communicate and solve problems within the teams I work with.                        </p>
+                        <div className="w-full h-px mb-8 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
                         {/* Quick Stats */}
                         <div className="flex flex-wrap justify-center gap-3 sm:gap-6 mb-8 px-2">
                             <div className="flex items-center gap-2 text-sm">
@@ -36,7 +34,7 @@ export default function AboutSection() {
                             </div>
                             <div className="flex items-center gap-2 text-sm">
                                 <Briefcase className="h-4 w-4 text-primary" />
-                                <span>Full-Time Developer @ AladdinB2B</span>
+                                <span>Full-Time Developer</span>
                             </div>
                             <div className="flex items-center gap-2 text-sm">
                                 <Globe className="h-4 w-4 text-primary" />
@@ -44,13 +42,13 @@ export default function AboutSection() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col text-center sm:flex-row gap-3 sm:gap-4 justify-center px-2">
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center px-2">
                             <a href="#contact" className="main-button">
                                 Get In Touch
                             </a>
                             <a
                                 href="/MahmoudResume.pdf"
-                                className="px-6 py-2 rounded-md border border-primary transition-all duration-400 text-primary hover:scale-[1.05] hover:bg-primary/10"
+                                className="px-6 py-2 rounded-md border border-primary transition-all duration-300 text-primary hover:bg-primary/10 hover:scale-105"
                                 download='MahmoudResume.pdf'
                             >
                                 Download CV
@@ -63,7 +61,7 @@ export default function AboutSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
                     {/* Technical Expertise */}
                     <FadeInOnScroll delay={0.2} direction="right" >
-                        <div className="gradient-border p-6 md:p-8 shadow-lg duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
+                        <div className="gradient-border p-7 md:p-8 shadow-lg rounded-2xl border border-border/50 hover:border-primary/50 transform hover:-translate-y-2 transition-all duration-300">
                             <div className="flex flex-col md:flex-row items-start gap-4 h-full">
                                 <div className="flex items-center gap-4 md:block">
                                     <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
@@ -74,7 +72,7 @@ export default function AboutSection() {
                                 <div className="text-left">
                                     <h4 className="hidden md:block font-semibold text-xl md:text-lg mb-2">Technical Expertise</h4>
                                     <p className="text-muted-foreground text-md md:text-base leading-relaxed">
-                                        Full-stack developer focused on React and Node.js. Very interested in keeping up with the latest tools to build better web apps
+                                        Full-stack developer currently focused on the MERN stack. Very interested in keeping up with the latest tools to build better web apps and improve my workflow.
                                     </p>
                                 </div>
                             </div>
@@ -83,7 +81,7 @@ export default function AboutSection() {
 
                     {/* Project Experience */}
                     <FadeInOnScroll delay={0.4} direction="left" >
-                        <div className="gradient-border p-6 md:p-8 shadow-lg duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
+                        <div className="gradient-border p-7 md:p-8 shadow-lg rounded-2xl border border-border/50 hover:border-primary/50 transform hover:-translate-y-2 transition-all duration-300">
                             <div className="flex flex-col md:flex-row items-start gap-4 h-full">
                                 <div className="flex items-center gap-4 md:block">
                                     <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
@@ -94,7 +92,7 @@ export default function AboutSection() {
                                 <div className="text-left">
                                     <h4 className="hidden md:block font-semibold text-xl md:text-lg mb-2">Professional Background</h4>
                                     <p className="text-muted-foreground text-md md:text-base leading-relaxed">
-                                        I've built over 50 projects, ranging from quick frontend components to complete full-stack apps. These projects are where I learned how to turn ideas into code
+                                        I've built over 50 projects, ranging from quick frontend components to complete full-stack apps. These projects are where I practiced how to turn ideas into code.
                                     </p>
                                 </div>
                             </div>
@@ -103,7 +101,7 @@ export default function AboutSection() {
 
                     {/* Professional Experience */}
                     <FadeInOnScroll delay={0.6} direction="right" >
-                        <div className="gradient-border p-6 md:p-8 shadow-lg duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
+                        <div className="gradient-border p-7 md:p-8 shadow-lg rounded-2xl border border-border/50 hover:border-primary/50 transform hover:-translate-y-2 transition-all duration-300">
                             <div className="flex flex-col md:flex-row items-start gap-4 h-full">
                                 <div className="flex items-center gap-4 md:block">
                                     <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
@@ -123,7 +121,7 @@ export default function AboutSection() {
 
                     {/* Learning & Growth */}
                     <FadeInOnScroll delay={0.8} direction="left" >
-                        <div className="gradient-border p-6 md:p-8 shadow-lg duration-400 rounded-2xl p-7 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2">
+                        <div className="gradient-border p-7 md:p-8 shadow-lg rounded-2xl border border-border/50 hover:border-primary/50 transform hover:-translate-y-2 transition-all duration-300">
                             <div className="flex flex-col md:flex-row items-start gap-4 h-full">
                                 <div className="flex items-center  gap-4 md:block">
                                     <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
@@ -134,7 +132,7 @@ export default function AboutSection() {
                                 <div className="text-left">
                                     <h4 className="hidden md:block font-semibold text-xl md:text-lg mb-2">Continuous Learning</h4>
                                     <p className="text-muted-foreground text-md md:text-base leading-relaxed">
-                                        Completed Colt Steele's Web Developer Bootcamp and Brad Traversy’s 50 Projects in 50 Days course to sharpen my front-end and full-stack skills.
+                                        Completed multiple courses including Colt Steele's Web Developer Bootcamp and Brad Traversy’s 50 Projects in 50 Days course to sharpen my front-end and full-stack skills.
                                     </p>
                                 </div>
                             </div>

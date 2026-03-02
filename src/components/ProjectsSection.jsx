@@ -62,7 +62,7 @@ export default function ProjectsSection() {
                         {project.map((project, key) => (
                             <div
                                 key={key}
-                                className={`group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 border border-border/50 hover:border-primary/30 transform hover:-translate-y-2 }`}
+                                className={`group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-border/50 hover:border-primary/50 transform hover:-translate-y-2 }`}
                             >
                                 {/* Project Image */}
                                 <div className="relative overflow-hidden">
