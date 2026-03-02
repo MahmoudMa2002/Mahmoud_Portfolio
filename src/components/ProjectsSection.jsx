@@ -94,10 +94,10 @@ export default function ProjectsSection() {
 
                                     {/* Project Info */}
                                     <div className="space-y-3">
-                                        <h3 className="text-xl text-cente font-semibold text-foreground">
+                                        <h3 className="text-xl font-semibold text-foreground">
                                             {project.title}
                                         </h3>
-                                        <p className="text-muted-foreground text-sm leading-relaxed">
+                                        <p className="text-muted-foreground text-left text-sm leading-relaxed">
                                             {project.description}
                                         </p>
                                     </div>
