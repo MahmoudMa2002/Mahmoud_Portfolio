@@ -93,8 +93,8 @@ export default function ProjectsSection() {
                                     <div className="w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
 
                                     {/* Project Info */}
-                                    <div className="text-center space-y-3">
-                                        <h3 className="text-xl font-semibold text-foreground">
+                                    <div className="space-y-3">
+                                        <h3 className="text-xl text-cente font-semibold text-foreground">
                                             {project.title}
                                         </h3>
                                         <p className="text-muted-foreground text-sm leading-relaxed">
