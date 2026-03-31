@@ -5,7 +5,7 @@ const project = [
     {
         id: 1,
         title: 'MapRoam',
-        description: 'A full-stack web application for discovering and sharing locations, built independently while following Colt Steele’s The Web Developer Bootcamp. Full list of features and code available on GitHub.',
+        description: 'A full-stack web application for discovering and sharing locations, built and updated while following Colt Steele’s The Web Developer Bootcamp. Full list of features, live demo and code available on GitHub.',
         image: '/projects/project1.png',
         tags: ['Node.js', 'Express.js', 'Mapbox', 'Passport.js', 'MongoDB'],
         demoUrl: 'https://jomap.onrender.com/',
@@ -14,7 +14,7 @@ const project = [
     {
         id: 2,
         title: '50 Projects in 50 Days',
-        description: 'Built 50 mini frontend projects as part of Brad Traversy’s 50 Projects in 50 Days course. Each project was enhanced with improved structure, added features and custom styling. Live demos and improvements are available on GitHub.',
+        description: 'A collection of 50 mini frontend projects as part of Brad Traversy’s 50 Projects in 50 Days course. Each project was updated with added features and custom styling. Live demos and improvements for each project are available on GitHub.',
         image: '/projects/project2.png',
         tags: ['CSS', 'JavaScript', 'HTML'],
         demoUrl: 'https://github.com/MahmoudMa2002/50projects50days?tab=readme-ov-file#project-list',
@@ -23,7 +23,7 @@ const project = [
     {
         id: 3,
         title: 'Bus Reservation System',
-        description: 'Early graduation project, served as a learning foundation for building dynamic websites and applying MVC architecture principles.',
+        description: 'Early graduation project, served as a learning foundation for building dynamic websites and applying MVC architecture. Helped me develop skills in authentication, CRUD operations, and responsive design.',
         image: '/projects/project3.png',
         tags: ['JSP', 'MySQL', 'HTML', 'CSS'],
         githubUrl: 'https://github.com/laithshabbar/proj2/tree/main/proj2'
@@ -31,7 +31,7 @@ const project = [
     {
         id: 4,
         title: 'React Projects',
-        description: 'A collection of React applications built using Vite and both JavaScript and TypeScript. These projects demonstrate component‑based architecture, state management, routing, and reusable UI patterns.',
+        description: 'A collection of React applications built using Vite and both JavaScript and TypeScript. These projects demonstrate component‑based architecture, state management, routing, and reusable UI patterns. More projects will be added as the repo grows.',
         image: '/projects/project4.png',
         tags: ['React', 'Vite', 'JavaScript', 'TypeScript'],
         demoUrl: 'https://github.com/MahmoudMa2002/react-projects/tree/main?tab=readme-ov-file#project-list',

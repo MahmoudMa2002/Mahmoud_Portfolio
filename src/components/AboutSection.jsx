@@ -17,10 +17,18 @@ export default function AboutSection() {
                         </p>
                         <div className="w-full h-px mb-8 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
                         <p className="text-base md:text-lg mb-6 max-w-3xl mx-auto px-2 leading-relaxed text-muted-foreground">
-                            I’m a software engineer at AladdinB2B, where I test, fix, and scale a large codebase using the MERN stack (React, Node.js, and MongoDB). While I spend most of my time in JavaScript, I’ve also worked with SQL, PHP, Java, and more shown in my skills section.
+                            I’m a software engineer currently working as a front-end developer at <a href="https://www.aladdinb2b.com/" target="_blank" rel="noreferrer" className="text-primary hover:text-primary/80 transition-colors duration-300">AladdinB2B</a>,
+                            where I test, fix, and scale a large B2B codebase using React and JavaScript.
+                            While I spend most of my time is in JavaScript, I’ve also worked with SQL, PHP, Java, and more — all listed in my
+                            <a href="#skills" className="text-primary hover:text-primary/80 transition-colors duration-300"> skills section</a>.
                         </p>
                         <p className="text-base md:text-lg mb-8 max-w-3xl mx-auto px-2 leading-relaxed text-muted-foreground">
-                            I graduated from JUST University with a 3.33 GPA. Since graduating, I've built over 50 projects showcased in my projects section and on GitHub. Before graduating, I worked for 5+ years in customer-facing roles, which helps me communicate and solve problems within the teams I work with.                        </p>
+                            I graduated from<a href="https://www.just.edu.jo/Pages/Default.aspx" target="_blank" rel="noreferrer" className="text-primary hover:text-primary/80 transition-colors duration-300"> JUST University </a>
+                            with a 3.33 GPA. Since graduating, I've taken multiple courses and built over 50 projects
+                            showcased in my <a href="#projects" className="text-primary hover:text-primary/80 transition-colors duration-300"> projects section </a>
+                            and on GitHub. Before graduating, I worked for 5+ years in customer-facing roles, which
+                            helped me improve my problem solving skills within the teams I work with.
+                        </p>
                         <div className="w-full h-px mb-8 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
                         {/* Quick Stats */}
                         <div className="flex flex-wrap justify-center gap-3 sm:gap-6 mb-8 px-2">
@@ -112,7 +120,7 @@ export default function AboutSection() {
                                 <div className="text-left">
                                     <h4 className="hidden md:block font-semibold text-xl md:text-lg mb-2">Professional Experience</h4>
                                     <p className="text-muted-foreground text-md md:text-base leading-relaxed">
-                                        Currently working as a Junior MERN Stack Developer at AladdinB2B, where I focus on building, testing and improving a large MERN stack codebase.
+                                        Currently working as a Junior front-end Developer at AladdinB2B, where I focus on building, testing and improving a large B2B codebase.
                                     </p>
                                 </div>
                             </div>
@@ -132,7 +140,7 @@ export default function AboutSection() {
                                 <div className="text-left">
                                     <h4 className="hidden md:block font-semibold text-xl md:text-lg mb-2">Continuous Learning</h4>
                                     <p className="text-muted-foreground text-md md:text-base leading-relaxed">
-                                        Completed multiple courses including Colt Steele's Web Developer Bootcamp and Brad Traversy’s 50 Projects in 50 Days course to sharpen my front-end and full-stack skills.
+                                        Completed multiple courses including Colt Steele's Web Developer Bootcamp and Brad Traversy’s 50 Projects in 50 Days.
                                     </p>
                                 </div>
                             </div>
