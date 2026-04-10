@@ -5,6 +5,7 @@ const skills = [
     { name: 'TypeScript', category: 'front-end', icon: 'https://www.svgrepo.com/show/354478/typescript-icon.svg' },
     { name: 'Bootstrap', category: 'front-end', icon: 'https://www.svgrepo.com/show/353498/bootstrap.svg' },
     { name: 'Tailwind CSS', category: 'front-end', icon: 'https://www.svgrepo.com/show/374118/tailwind.svg' },
+    { name: 'Ant Design', category: 'front-end', icon: 'https://www.svgrepo.com/show/353401/ant-design.svg' },
     { name: 'React', category: 'front-end', icon: 'https://www.svgrepo.com/show/452092/react.svg' },
 
     { name: 'Node.js', category: 'back-end', icon: 'https://www.svgrepo.com/show/452075/node-js.svg' },
@@ -61,7 +62,7 @@ export default function SkillsSection() {
                                 onClick={() => setActiveCategory(category)}
                                 className={cn(
                                     "cursor-pointer px-5 py-2 rounded-full transition-all duration-400",
-                                    activeCategory === category ? 'bg-primary text-primary-foreground' : "border border-primary text-primary hover:scale-[1.05] hover:bg-primary/10")}
+                                    activeCategory === category ? 'bg-primary text-primary-foreground border border-transparent' : "border border-primary text-primary hover:scale-[1.05] hover:bg-primary/10")}
                             >
                                 {category}
                             </button>

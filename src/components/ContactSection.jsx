@@ -19,9 +19,9 @@ export default function ContactSection() {
 
                 <FadeInOnScroll delay={0.6} direction="up" >
                     <div className="bg-card p-8 md:p-12 rounded-2xl shadow-lg border border-border/50 backdrop-blur-sm max-w-6xl mx-auto">
-                        <div className="grid grid-cols-1 md:grid-cols-3">
+                        <div className="flex flex-col md:flex-row">
                             {/* Email */}
-                            <div className="flex flex-col items-center text-center space-y-3 group py-6">
+                            <div className="flex flex-1 flex-col items-center text-center space-y-3 group py-6">
                                 <a
                                     href="mailto:mazenmahmod201@gmail.com"
                                     className="p-4 rounded-full bg-primary/10 hover:bg-primary/20 transition-all duration-300 hover:scale-110"
@@ -39,10 +39,10 @@ export default function ContactSection() {
                                 </div>
                             </div>
 
-                            <div className="w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent  mx-auto md:hidden"></div>
+                            <div className="w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent mx-auto md:w-px md:h-auto md:self-stretch md:bg-gradient-to-b"></div>
 
                             {/* Phone */}
-                            <div className="flex flex-col items-center text-center space-y-3 group py-6">
+                            <div className="flex flex-1 flex-col items-center text-center space-y-3 group py-6">
                                 <a
                                     href="tel:+962795123571"
                                     className="p-4 rounded-full bg-primary/10 hover:bg-primary/20 transition-all duration-300 hover:scale-110"
@@ -60,10 +60,10 @@ export default function ContactSection() {
                                 </div>
                             </div>
 
-                            <div className="w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent mx-auto md:hidden"></div>
+                            <div className="w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent mx-auto md:w-px md:h-auto md:self-stretch md:bg-gradient-to-b"></div>
 
                             {/* LinkedIn */}
-                            <div className="flex flex-col items-center text-center space-y-3 group py-6">
+                            <div className="flex flex-1 flex-col items-center text-center space-y-3 group py-6">
                                 <a
                                     href="https://www.linkedin.com/in/mahmoud-abu-al-hayja%E2%80%99a-30a270275/"
                                     target="_blank"
