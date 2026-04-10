@@ -1,3 +1,18 @@
+const stars = Array.from({ length: 30 }, (_, i) => {
+    const size = 1 + Math.random() * 1.8;
+    const delay = Math.random() * 4;
+    const duration = 4 + Math.random() * 4;
+
+    return {
+        id: i,
+        left: `${Math.random() * 100}%`,
+        top: `${Math.random() * 100}%`,
+        size,
+        delay,
+        duration,
+    };
+});
+
 const AnimatedBackground = () => {
     return (
         <div className="fixed inset-0 overflow-hidden pointer-events-none">
@@ -9,17 +24,19 @@ const AnimatedBackground = () => {
                 }}
             />
 
-            {/* Floating particles*/}
+            {/* Floating stars */}
             <div className="absolute inset-0">
-                {[...Array(60)].map((_, i) => (
+                {stars.map((star) => (
                     <div
-                        key={i}
-                        className="absolute w-0.5 h-0.5 rounded-full opacity-20"
+                        key={star.id}
+                        className="star"
                         style={{
-                            backgroundColor: 'white',
-                            left: `${Math.random() * 100}%`,
-                            top: `${Math.random() * 100}%`,
-                            animation: `pulse ${2 + Math.random() * 2}s ease-in-out ${Math.random() * 3}s infinite`,
+                            left: star.left,
+                            top: star.top,
+                            width: `${star.size}px`,
+                            height: `${star.size}px`,
+                            backgroundColor: 'rgba(255,255,255,0.85)',
+                            animation: `twinkle ${star.duration}s ease-in-out ${star.delay}s infinite alternate`,
                         }}
                     />
                 ))}

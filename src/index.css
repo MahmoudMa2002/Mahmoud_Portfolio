@@ -130,6 +130,28 @@
   .animate-blink {
     animation: blink 1s step-start infinite;
   }
+
+  .star {
+    position: absolute;
+    border-radius: 9999px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.35);
+    opacity: 0.75;
+  }
+
+  @keyframes twinkle {
+    0% {
+      opacity: 0.35;
+      transform: scale(0.95);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 0.45;
+      transform: scale(0.95);
+    }
+  }
 }
 
 /* Root element styles for main application container */

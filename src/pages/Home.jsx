@@ -6,7 +6,6 @@ import ProjectsSection from "../components/ProjectsSection";
 import ContactSection from "../components/ContactSection";
 import AnimatedBackground from "../components/AnimatedBackground";
 import Footer from "../components/Footer";
-import FadeInOnScroll from "@/components/FadeInOnScroll";
 
 
 export const Home = () => {
@@ -16,9 +15,7 @@ export const Home = () => {
             <main>
                 <AnimatedBackground />
                 <HeroSection />
-                <FadeInOnScroll delay={0.2} direction="up">
-                    <AboutSection />
-                </FadeInOnScroll>
+                <AboutSection />
                 <SkillsSection />
                 <ProjectsSection />
                 <ContactSection />

@@ -3,7 +3,7 @@ import { ArrowUp } from "lucide-react";
 export default function Footer() {
     return (
         <footer className="py-6 px-4 bg-card relative border-t border-border mt-12 pt-8 flex flex-wrap justify-between items-center">
-            <p className="text-sm text-muted-forground">
+            <p className="text-sm text-muted-foreground">
                 &copy; {new Date().getFullYear()} Mahmoud Abu-Al Hayja’a.
             </p>
             <a href="#hero" className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-all animate-bounce z-10 ">

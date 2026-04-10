@@ -1,6 +1,12 @@
 import Typewriter from "@/components/Typewriter";
 import { ArrowDown } from "lucide-react";
 
+const typewriterTexts = [
+  "Software Engineer Graduate | JUST University",
+  "Full-Stack Developer | React, Node.js, MongoDB",
+  "MERN Stack Developer @ AladdinB2B"
+];
+
 export default function HeroSection() {
   return (
     <section
@@ -24,7 +30,7 @@ export default function HeroSection() {
           </h1>
 
           <div className="opacity-0 animate-fade-in-delay-3">
-            <Typewriter texts={["Software Engineer Graduate | JUST University", "Full-Stack Developer | React, Node.js, MongoDB", "MERN Stack Developer @ AladdinB2B" ]} />
+            <Typewriter texts={typewriterTexts} />
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-fade-in-delay-4">

@@ -59,10 +59,10 @@ export default function ProjectsSection() {
                 <FadeInOnScroll delay={0.3} direction="up" >
                     {/* Projects Grid */}
                     <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
-                        {project.map((project, key) => (
+                        {project.map((project) => (
                             <div
-                                key={key}
-                                className={`group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-border/50 hover:border-primary/50 transform hover:-translate-y-2 }`}
+                                key={project.id}
+                                className="group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-border/50 hover:border-primary/50 transform hover:-translate-y-2"
                             >
                                 {/* Project Image */}
                                 <div className="relative overflow-hidden">

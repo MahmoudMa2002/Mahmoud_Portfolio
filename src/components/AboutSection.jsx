@@ -19,7 +19,7 @@ export default function AboutSection() {
                         <p className="text-base md:text-lg mb-6 max-w-3xl mx-auto px-2 leading-relaxed text-muted-foreground">
                             I’m a software engineer currently working as a front-end developer at <a href="https://www.aladdinb2b.com/" target="_blank" rel="noreferrer" className="text-primary hover:text-primary/80 transition-colors duration-300">AladdinB2B</a>,
                             where I test, fix, and scale a large B2B codebase using React and JavaScript.
-                            While I spend most of my time is in JavaScript, I’ve also worked with SQL, PHP, Java, and more — all listed in my
+                            While I spend most of my time in JavaScript, I’ve also worked with SQL, PHP, Java, and more — all listed in my
                             <a href="#skills" className="text-primary hover:text-primary/80 transition-colors duration-300"> skills section</a>.
                         </p>
                         <p className="text-base md:text-lg mb-8 max-w-3xl mx-auto px-2 leading-relaxed text-muted-foreground">
