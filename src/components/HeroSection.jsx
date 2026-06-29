@@ -1,13 +1,10 @@
 import Typewriter from "@/components/Typewriter";
 import { ArrowDown } from "lucide-react";
-
-const typewriterTexts = [
-  "Software Engineer Graduate | JUST University",
-  "Full-Stack Developer | React, Node.js, MongoDB",
-  "MERN Stack Developer @ AladdinB2B"
-];
+import { useLanguage } from '../LanguageContext';
 
 export default function HeroSection() {
+  const { lang, t } = useLanguage();
+
   return (
     <section
       id="hero"
@@ -25,17 +22,17 @@ export default function HeroSection() {
               Mahmoud
             </span>
             <span className="text-primary ml-2 opacity-0 animate-fade-in-delay-2 block">
-              Abu al-Hayja’a
+              Abu al-Hayja'a
             </span>
           </h1>
 
           <div className="opacity-0 animate-fade-in-delay-3">
-            <Typewriter texts={typewriterTexts} />
+            <Typewriter key={lang} texts={t.hero.typewriter} />
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="main-button w-40 sm:w-auto">
-              View My Work
+              {t.hero.cta}
             </a>
           </div>
         </div>
@@ -47,4 +44,4 @@ export default function HeroSection() {
       </div>
     </section>
   );
-};
+}

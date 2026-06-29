@@ -1,19 +1,22 @@
 import { Linkedin, Mail, Phone } from "lucide-react";
 import FadeInOnScroll from "@/components/FadeInOnScroll";
+import { useLanguage } from '../LanguageContext';
 
 export default function ContactSection() {
+    const { t } = useLanguage();
+    const c = t.contact;
+
     return (
         <section id="contact" className=" px-4 relative">
-
             <div className="container mx-auto max-w-6xl">
                 <FadeInOnScroll delay={0.2} direction="up" >
-                    {/* Title*/}
+                    {/* Title */}
                     <h2 className="text-3xl md:text-4xl font-bold mb-3 text-center">
-                        Get In <span className="text-primary">Touch</span>
+                        {c.heading} <span className="text-primary">{c.headingHighlight}</span>
                     </h2>
                     <div className="w-24 h-1 mb-4 bg-gradient-to-r from-primary to-border mx-auto rounded-full"></div>
                     <p className="text-center text-muted-foreground mb-4 max-w-2xl mx-auto">
-                        Send me a message via email, call my phone number, or connect with me on LinkedIn.
+                        {c.description}
                     </p>
                 </FadeInOnScroll>
 
@@ -29,7 +32,7 @@ export default function ContactSection() {
                                     <Mail className="h-6 w-6 text-primary" />
                                 </a>
                                 <div>
-                                    <h4 className="font-semibold text-foreground mb-1">Email</h4>
+                                    <h4 className="font-semibold text-foreground mb-1">{c.email}</h4>
                                     <a
                                         href="mailto:mazenmahmod201@gmail.com"
                                         className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm break-all"
@@ -50,7 +53,7 @@ export default function ContactSection() {
                                     <Phone className="h-6 w-6 text-primary" />
                                 </a>
                                 <div>
-                                    <h4 className="font-semibold text-foreground mb-1">Phone</h4>
+                                    <h4 className="font-semibold text-foreground mb-1">{c.phone}</h4>
                                     <a
                                         href="tel:+962795123571"
                                         className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm"
@@ -73,14 +76,14 @@ export default function ContactSection() {
                                     <Linkedin className="h-6 w-6 text-primary" />
                                 </a>
                                 <div>
-                                    <h4 className="font-semibold text-foreground mb-1">LinkedIn</h4>
+                                    <h4 className="font-semibold text-foreground mb-1">{c.linkedin}</h4>
                                     <a
                                         href="https://www.linkedin.com/in/mahmoud-abu-al-hayja%E2%80%99a-30a270275/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm break-all"
                                     >
-                                        LinkedIn Profile
+                                        {c.linkedinProfile}
                                     </a>
                                 </div>
                             </div>

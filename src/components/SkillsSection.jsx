@@ -35,12 +35,12 @@ const skills = [
 import { useState } from 'react';
 import { cn } from '../lib/util';
 import FadeInOnScroll from "@/components/FadeInOnScroll";
-
-
-const categories = ['All', 'Front-end', 'Back-end', 'Design & Tools', 'Languages', 'Databases'];
+import { useLanguage } from '../LanguageContext';
 
 export default function SkillsSection() {
+    const { t } = useLanguage();
     const [activeCategory, setActiveCategory] = useState('All');
+
     const filteredSkills = skills.filter((skill) => {
         if (activeCategory === 'All') return true;
         return skill.category.toLowerCase() === activeCategory.toLowerCase();
@@ -50,50 +50,50 @@ export default function SkillsSection() {
         <section id="skills" className="py-8 px-4 relative bg-secondary/30 scroll-mt-12">
             <div className="container mx-auto max-w-6xl">
                 <FadeInOnScroll delay={0.1} direction="up" >
-                    {/*Title*/}
+                    {/* Title */}
                     <h2 className="text-3xl md:text-4xl font-bold mb-3 text-center">
-                        My <span className="text-primary">Skills</span>
+                        {t.skills.heading} <span className="text-primary">{t.skills.headingHighlight}</span>
                     </h2>
-                    {/*Filter */}
-                    <div className='flex flex-wrap justify-center all gap-4 mb-8'>
-                        {categories.map((category, key) => (
+                    {/* Filter */}
+                    <div className='flex flex-wrap justify-center gap-4 mb-8'>
+                        {t.skills.categories.map((cat, key) => (
                             <button
                                 key={key}
-                                onClick={() => setActiveCategory(category)}
+                                onClick={() => setActiveCategory(cat.key)}
                                 className={cn(
                                     "cursor-pointer px-5 py-2 rounded-full transition-all duration-400",
-                                    activeCategory === category ? 'bg-primary text-primary-foreground border border-transparent' : "border border-primary text-primary hover:scale-[1.05] hover:bg-primary/10")}
+                                    activeCategory === cat.key
+                                        ? 'bg-primary text-primary-foreground border border-transparent'
+                                        : "border border-primary text-primary hover:scale-[1.05] hover:bg-primary/10"
+                                )}
                             >
-                                {category}
+                                {cat.label}
                             </button>
                         ))}
                     </div>
                 </FadeInOnScroll>
 
                 <FadeInOnScroll delay={0.4} direction="up" >
-                    {/*skills */}
+                    {/* Skills Grid */}
                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 ">
-                        {filteredSkills.map((skill, index) => {
-                            return (
-                                <div
-                                    key={index}
-                                    className="bg-card p-6 rounded-xl shadow-md card-hover flex flex-col items-center justify-center group transition-all duration-300 border border-border/50 hover:border-primary/50 transform hover:-translate-y-2"
-                                >
-                                    <img
-                                        src={skill.icon}
-                                        alt={skill.name}
-                                        className="w-12 h-12 mb-3 group-hover:scale-110 transition-all duration-400"
-                                    />
-                                    <h3 className="font-semibold text-sm text-center">
-                                        {skill.name}
-                                    </h3>
-                                </div>
-                            );
-
-                        })}
+                        {filteredSkills.map((skill, index) => (
+                            <div
+                                key={index}
+                                className="bg-card p-6 rounded-xl shadow-md card-hover flex flex-col items-center justify-center group transition-all duration-300 border border-border/50 hover:border-primary/50 transform hover:-translate-y-2"
+                            >
+                                <img
+                                    src={skill.icon}
+                                    alt={skill.name}
+                                    className="w-12 h-12 mb-3 group-hover:scale-110 transition-all duration-400"
+                                />
+                                <h3 className="font-semibold text-sm text-center">
+                                    {skill.name}
+                                </h3>
+                            </div>
+                        ))}
                     </div>
                 </FadeInOnScroll>
             </div>
-        </section >
+        </section>
     );
-};
+}

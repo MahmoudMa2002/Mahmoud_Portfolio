@@ -2,18 +2,20 @@ import { useState, useEffect } from 'react';
 import { cn } from '../lib/util';
 import { Menu, X } from 'lucide-react';
 import ThemeToggle from "../components/ThemeToggle";
-
-const navItems = [
-    { name: 'Home', href: '#hero' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' }
-];
+import { useLanguage } from '../LanguageContext';
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { lang, toggleLang, t } = useLanguage();
+
+    const navItems = [
+        { name: t.nav.home, href: '#hero' },
+        { name: t.nav.about, href: '#about' },
+        { name: t.nav.skills, href: '#skills' },
+        { name: t.nav.projects, href: '#projects' },
+        { name: t.nav.contact, href: '#contact' },
+    ];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -24,10 +26,18 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    // Lock scroll when mobile menu is open
     useEffect(() => {
         document.body.style.overflow = isMenuOpen ? 'hidden' : 'auto';
     }, [isMenuOpen]);
+
+    const LangToggle = () => (
+        <button
+            onClick={toggleLang}
+            className="text-sm font-medium px-3 py-1 rounded-full border border-primary text-primary hover:bg-primary/10 transition-all duration-300"
+        >
+            {lang === 'en' ? 'AR' : 'EN'}
+        </button>
+    );
 
     return (
         <nav className={cn(
@@ -43,7 +53,7 @@ export default function Navbar() {
                 </a>
 
                 {/* desktop nav */}
-                <div className='hidden md:flex space-x-8'>
+                <div className='hidden md:flex items-center gap-8'>
                     {navItems.map((item, key) => (
                         <a
                             key={key}
@@ -54,6 +64,7 @@ export default function Navbar() {
                         </a>
                     ))}
                     <ThemeToggle />
+                    <LangToggle />
                 </div>
 
                 {/* mobile menu toggle */}
@@ -72,7 +83,10 @@ export default function Navbar() {
                         isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
                     )}
                 >
-                    <ThemeToggle />
+                    <div className="flex flex-col items-center gap-3 mb-8">
+                        <ThemeToggle />
+                        <LangToggle />
+                    </div>
                     <div className='flex flex-col space-y-8 text-xl'>
                         {navItems.map((item, key) => (
                             <a
