@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+html[lang="ar"] body {
+  font-family: "Cairo", sans-serif;
+}
+
 @theme {
   --color-border: var(--border);
   --color-background: var(--background);
@@ -143,10 +147,12 @@
       opacity: 0.35;
       transform: scale(0.95);
     }
+
     50% {
       opacity: 1;
       transform: scale(1.2);
     }
+
     100% {
       opacity: 0.45;
       transform: scale(0.95);

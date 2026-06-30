@@ -33,14 +33,14 @@ export default function Navbar() {
     const LangToggle = () => (
         <button
             onClick={toggleLang}
-            className="text-sm font-medium px-3 py-1 rounded-full border border-primary text-primary hover:bg-primary/10 transition-all duration-300"
+            className="cursor-pointer text-sm font-medium px-3 py-1 rounded-full border border-primary text-primary hover:bg-primary/10 transition-all duration-300"
         >
             {lang === 'en' ? 'AR' : 'EN'}
         </button>
     );
 
     return (
-        <nav className={cn(
+        <nav dir="ltr" className={cn(
             'fixed w-full z-40 transition-all duration-300',
             isScrolled ? 'py-3 bg-background/80 backdrop-blur-md shadow-xs' : 'py-5'
         )}>
