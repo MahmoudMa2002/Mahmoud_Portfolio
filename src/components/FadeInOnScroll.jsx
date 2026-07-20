@@ -19,15 +19,16 @@ export default function FadeInOnScroll({
     left: { x: 30 },
     right: { x: -30 },
   };
+  const MotionDiv = motion.div;
 
   return (
-    <motion.div
+    <MotionDiv
       ref={ref}
       initial={{ opacity: 0, ...variants[direction] }}
       animate={inView ? { opacity: 1, x: 0, y: 0 } : {}}
       transition={{ duration, delay, ease: [0.42, 0, 0.58, 1] }}
     >
       {children}
-    </motion.div>
+    </MotionDiv>
   );
 }
